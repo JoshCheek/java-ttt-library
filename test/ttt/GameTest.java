@@ -22,12 +22,12 @@ public class GameTest extends junit.framework.TestCase {
                 Game game = new Game("120000000");
                 assertEquals(game.board(), "120000000");
             }
-            /*
+
             public static void testItKnowsItsTurn() {
-                String board = "120000000";
-                ? game = ?.new(board);
-                assertEqual(game.turn(), 1);
+                Game game = new Game("120000000");
+                assertEquals(game.turn(), 1);
             }
+            /*
             public static void testItMarksTheBoardWithTheCurrentPlayersNumber() {
                 String board = "120000000";
                 ? game = ?.new(board);

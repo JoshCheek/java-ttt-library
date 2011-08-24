@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ttt/Game.java" afterPath="$PROJECT_DIR$/src/ttt/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/ttt/GameTest.java" />
     </list>
@@ -66,7 +65,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="20" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+            <state line="29" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +74,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="20" column="43" selection-start="535" selection-end="554" vertical-scroll-proportion="0.49234137">
+            <state line="25" column="49" selection-start="713" selection-end="731" vertical-scroll-proportion="0.42669585">
               <folding />
             </state>
           </provider>
@@ -219,29 +218,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.testItKnowsItsBoard">
-    <configuration default="false" name="GameTest.testReturnNumber" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ttt-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ttt" />
-      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
-      <option name="METHOD_NAME" value="testReturnNumber" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GameTest.testItKnowsItsTurn">
     <configuration default="false" name="TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ttt-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -324,6 +301,28 @@
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
+    <configuration default="false" name="GameTest.testItKnowsItsTurn" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ttt" />
+      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
+      <option name="METHOD_NAME" value="testItKnowsItsTurn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
@@ -399,11 +398,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.testReturnNumber" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsBoard" />
-      <item index="4" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsBoard" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsTurn" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -509,14 +508,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="454" selection-end="454" vertical-scroll-proportion="0.0">
+        <state line="29" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="43" selection-start="535" selection-end="554" vertical-scroll-proportion="0.49234137">
+        <state line="25" column="49" selection-start="713" selection-end="731" vertical-scroll-proportion="0.42669585">
           <folding />
         </state>
       </provider>

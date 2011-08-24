@@ -25,4 +25,8 @@ public class Game {
     public String board() {
         return board;
     }
+
+    public int turn() {
+        return 1;
+    }
 }
