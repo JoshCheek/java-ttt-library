@@ -78,6 +78,7 @@ public class GameTest extends junit.framework.TestCase {
         private void assertWinningState(String board, int player) {
             Game game = new Game(board);
             assertTrue(game.isOver());
+            assertFalse(game.isTie());
             assertEquals(game.winner(), player);
         }
         public void testItRecognizesAWinsForAllPlayersInAllPositions() {
@@ -99,15 +100,6 @@ public class GameTest extends junit.framework.TestCase {
             assertWinningState("002020200", 2);
         }
 
-//    describe 'winning states' do
-//        ['
-// ].each do |configuration, winner|
-//          it { should_not be_a_tie }
-//          its(:winner) { should be winner }
-//        end
-//      end
-//    end
-//
 //    describe 'non winning states' do
 //      [ '000000000',
 //        '100000000',

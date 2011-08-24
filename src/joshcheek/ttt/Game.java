@@ -88,4 +88,8 @@ public class Game {
         };
 
     }
+
+    public boolean isTie() {
+        return false;
+    }
 }
