@@ -97,6 +97,6 @@ public class Game {
     }
 
     public boolean isTie() {
-        return false;
+        return isOver() && winner() == -1;
     }
 }
