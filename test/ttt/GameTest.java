@@ -15,14 +15,14 @@ public class GameTest extends junit.framework.TestCase {
     public static void testItHasNoMovesWhenCreatedWithoutAnArgument() {
         assertEquals(new Game().board(), "000000000");
     }
-                         /*
+
     // when it is created with an unfinished board
         // with an equal number of 1s and 2s
-            public static void testItKnowsItsBoard() {
-                String board = "120000000";
-                ? game = ?.new(board);
-                assertEqual(game.board(), board);
+            public void testItKnowsItsBoard() {
+                Game game = new Game("120000000");
+                assertEquals(game.board(), "120000000");
             }
+            /*
             public static void testItKnowsItsTurn() {
                 String board = "120000000";
                 ? game = ?.new(board);
