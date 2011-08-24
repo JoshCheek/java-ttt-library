@@ -53,6 +53,8 @@ public class Game {
                 {0, 3, 6},
                 {1, 4, 7},
                 {2, 5, 8},
+                {0, 4, 8},
+                {2, 4, 6},
         };
         for(int[] positions : winningStates) {
             int i1=positions[0], i2=positions[1], i3=positions[2];

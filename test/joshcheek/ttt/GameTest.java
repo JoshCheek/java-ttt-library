@@ -93,14 +93,10 @@ public class GameTest extends junit.framework.TestCase {
             assertWinningState("200200200", 2);
             assertWinningState("020020020", 2);
             assertWinningState("002002002", 2);
-
-//        ['200200200', 2],
-//        ['020020020', 2],
-//        ['002002002', 2],
-//        ['100010001', 1],
-//        ['001010100', 1],
-//        ['200020002', 2],
-//        ['002020200', 2],
+            assertWinningState("100010001", 1);
+            assertWinningState("001010100", 1);
+            assertWinningState("200020002", 2);
+            assertWinningState("002020200", 2);
         }
 
 //    describe 'winning states' do
