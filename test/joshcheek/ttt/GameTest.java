@@ -47,10 +47,13 @@ public class GameTest extends junit.framework.TestCase {
             }
 
     // when player1 can win
+        public void testGameIsNotOverWhenPlayer1CanWin() {
+            assertFalse(new Game("120120000").isOver());
+        }
+
 //        public static
 //      let(:game) { Game.new '120120000' }
 //      subject { game }
-//      it { should_not be_over }
 //      context 'and player1 wins' do
 //        before { game.mark 7 }
 //        its(:board) { should == '120120100' }
