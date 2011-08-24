@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" afterPath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
     </list>
@@ -65,7 +66,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="46" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
+            <state line="40" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,7 +75,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="23" column="50" selection-start="690" selection-end="690" vertical-scroll-proportion="-0.016427105">
+            <state line="39" column="18" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.47638604">
               <folding />
             </state>
           </provider>
@@ -223,29 +224,7 @@
       <recent name="joshcheek" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest">
-    <configuration default="false" name="GameTest.testItKnowsItsBoard" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ttt-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
-      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
-      <option name="METHOD_NAME" value="testItKnowsItsBoard" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GameTest.testItMarksTheBoardWithPlayerTwosNumber">
     <configuration default="false" name="Game" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.Game" />
       <option name="VM_PARAMETERS" />
@@ -313,6 +292,28 @@
       <option name="PACKAGE_NAME" value="joshcheek.ttt" />
       <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
       <option name="METHOD_NAME" value="testItMarksTheBoardWithTheCurrentPlayersNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.testItMarksTheBoardWithPlayerTwosNumber" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
+      <option name="METHOD_NAME" value="testItMarksTheBoardWithPlayerTwosNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -403,11 +404,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsBoard" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Game" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsTurn" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItMarksTheBoardWithTheCurrentPlayersNumber" />
+      <item index="0" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsTurn" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.testItMarksTheBoardWithTheCurrentPlayersNumber" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItMarksTheBoardWithPlayerTwosNumber" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -456,7 +457,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22076789" sideWeight="0.6963563" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -513,14 +514,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="46" selection-start="787" selection-end="787" vertical-scroll-proportion="0.0">
+        <state line="40" column="22" selection-start="852" selection-end="852" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="50" selection-start="690" selection-end="690" vertical-scroll-proportion="-0.016427105">
+        <state line="39" column="18" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.47638604">
           <folding />
         </state>
       </provider>

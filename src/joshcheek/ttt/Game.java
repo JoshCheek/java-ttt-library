@@ -38,6 +38,6 @@ public class Game {
     }
 
     public void mark(int i) {
-        board[i-1] = '1';
+        board[i-1] = Integer.toString(turn()).charAt(0);
     }
 }
