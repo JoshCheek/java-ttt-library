@@ -27,14 +27,22 @@ public class Game {
     }
 
     public int turn() {
-        int numOnesInBoard = 0;
-        int numTwosInBoard = 0;
-        for(char player : board)
-            if(player == '1')
-                numOnesInBoard++;
-            else if(player == '2')
-                numTwosInBoard++;
-        return numOnesInBoard - numTwosInBoard + 1;
+        return numOnesInBoard() - numTwosInBoard() + 1;
+    }
+    private int numOnesInBoard() {
+        return countOccurrances('1');
+    }
+
+    private int numTwosInBoard() {
+        return countOccurrances('2');
+    }
+
+    private int countOccurrances(char targetPlayer) {
+        int occurrences = 0;
+        for(char currentPlayer : board)
+            if(currentPlayer == targetPlayer)
+                occurrences++;
+        return occurrences;
     }
 
     public void mark(int i) {
