@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" afterPath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
     </list>
@@ -66,7 +65,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="48" column="64" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
+            <state line="47" column="26" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -75,7 +74,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="85" column="23" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.5482546">
+            <state line="81" column="48" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.22997947">
               <folding />
             </state>
           </provider>
@@ -99,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/TTT.java" />
         <option value="$PROJECT_DIR$/test/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/ttt/Game.java" />
-        <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
+        <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
       </list>
     </option>
   </component>
@@ -225,28 +224,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.GameTest">
-    <configuration default="false" name="GameTest.testGameMarksPlayer1WinCorrectly" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ttt-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
-      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
-      <option name="METHOD_NAME" value="testGameMarksPlayer1WinCorrectly" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
     <configuration default="false" name="GameTest.testGameIsOverWhenPlayer1Wins" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ttt-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -314,6 +291,28 @@
       <option name="PACKAGE_NAME" value="joshcheek.ttt" />
       <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
       <option name="METHOD_NAME" value="testItRecognizesAWinAcrossTheTopByPlayer1" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.testItRecognizesAWinsForAllPlayersInAllPositions" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
+      <option name="METHOD_NAME" value="testItRecognizesAWinsForAllPlayersInAllPositions" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -404,11 +403,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.testGameMarksPlayer1WinCorrectly" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.testGameIsOverWhenPlayer1Wins" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Game" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItRecognizesAWinAcrossTheTopByPlayer1" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.testGameIsOverWhenPlayer1Wins" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="2" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.testItRecognizesAWinAcrossTheTopByPlayer1" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItRecognizesAWinsForAllPlayersInAllPositions" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -514,14 +513,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="48" column="64" selection-start="1106" selection-end="1106" vertical-scroll-proportion="0.0">
+        <state line="47" column="26" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="85" column="23" selection-start="2835" selection-end="2835" vertical-scroll-proportion="0.5482546">
+        <state line="81" column="48" selection-start="2710" selection-end="2710" vertical-scroll-proportion="0.22997947">
           <folding />
         </state>
       </provider>

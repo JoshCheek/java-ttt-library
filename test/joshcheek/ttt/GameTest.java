@@ -80,14 +80,11 @@ public class GameTest extends junit.framework.TestCase {
             assertTrue(game.isOver());
             assertEquals(game.winner(), player);
         }
-        public void testItRecognizesAWinAcrossTheTopByPlayer1() {
+        public void testItRecognizesAWinsForAllPlayersInAllPositions() {
             assertWinningState("111000000", 1);
-        }
-
-//    describe 'winning states' do
-//        ['000111000', 1],
-//        ['000000111', 1],
-//        ['222000000', 2],
+            assertWinningState("000111000", 1);
+            assertWinningState("000000111", 1);
+//            assertWinningState("222000000", 2),
 //        ['000222000', 2],
 //        ['000000222', 2],
 //        ['100100100', 1],
@@ -99,7 +96,12 @@ public class GameTest extends junit.framework.TestCase {
 //        ['100010001', 1],
 //        ['001010100', 1],
 //        ['200020002', 2],
-//        ['002020200', 2], ].each do |configuration, winner|
+//        ['002020200', 2],
+        }
+
+//    describe 'winning states' do
+//        ['
+// ].each do |configuration, winner|
 //          it { should_not be_a_tie }
 //          its(:winner) { should be winner }
 //        end
