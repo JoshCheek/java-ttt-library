@@ -50,7 +50,14 @@ public class Game {
     }
 
     public boolean isOver() {
-        return winner() != -1;
+        return winner() != -1 || isFull();
+    }
+
+    private boolean isFull() {
+        for(char player : board)
+            if(!isPlayer(player))
+                return false;
+        return true;
     }
 
     public int winner() {

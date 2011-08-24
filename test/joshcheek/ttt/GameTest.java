@@ -100,6 +100,7 @@ public class GameTest extends junit.framework.TestCase {
             assertWinningState("002020200", 2);
         }
 
+    // non winning states
         private void assertNonWinningState(String board) {
             Game game = new Game(board);
             assertFalse(game.isOver());
@@ -118,18 +119,13 @@ public class GameTest extends junit.framework.TestCase {
             assertNonWinningState("121221010");
             assertNonWinningState("121221012");
         }
-//    describe 'non winning states' do
-//      [
-//      end
-//      context "121221112, a tied state" do
-//        subject { Game.new '121221112' }
-//        it { should be_over }
-//        it { should be_a_tie }
-//        its(:winner) { should be nil }
-//        specify("status(1) should be :ties") { subject.status(1).should be :ties }
-//        specify("status(2) should be :ties") { subject.status(2).should be :ties }
-//      end
-//    end
+
+        public void testTiedState() {
+            Game game = new Game("121221112");
+            assertTrue(game.isOver());
+            assertTrue(game.isTie());
+            assertEquals(game.winner(), -1);
+        }
 
 }
 
