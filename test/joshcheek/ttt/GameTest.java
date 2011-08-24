@@ -100,22 +100,26 @@ public class GameTest extends junit.framework.TestCase {
             assertWinningState("002020200", 2);
         }
 
+        private void assertNonWinningState(String board) {
+            Game game = new Game(board);
+            assertFalse(game.isOver());
+            assertFalse(game.isTie());
+            assertEquals(game.winner(), -1);
+        }
+        public void testItRecognizesNonWinningStates() {
+            assertNonWinningState("000000000");
+            assertNonWinningState("000000000");
+            assertNonWinningState("100000000");
+            assertNonWinningState("100020000");
+            assertNonWinningState("101020000");
+            assertNonWinningState("121020000");
+            assertNonWinningState("121020010");
+            assertNonWinningState("121220010");
+            assertNonWinningState("121221010");
+            assertNonWinningState("121221012");
+        }
 //    describe 'non winning states' do
-//      [ '000000000',
-//        '100000000',
-//        '100020000',
-//        '101020000',
-//        '121020000',
-//        '121020010',
-//        '121220010',
-//        '121221010',
-//        '121221012', ].each do |configuration|
-//        context configuration do
-//          subject { Game.new configuration }
-//          it { should_not be_over }
-//          it { should_not be_a_tie }
-//          its(:winner) { should be nil }
-//        end
+//      [
 //      end
 //      context "121221112, a tied state" do
 //        subject { Game.new '121221112' }
