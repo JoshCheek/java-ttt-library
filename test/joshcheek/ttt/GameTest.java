@@ -15,37 +15,37 @@ public class GameTest extends junit.framework.TestCase {
     }
 
     public static void testItHasNoMovesWhenCreatedWithoutAnArgument() {
-        assertEquals(new Game().board(), "000000000");
+        assertEquals("000000000", new Game().board());
     }
 
     // when it is created with an unfinished board
         // with an equal number of 1s and 2s
             public void testItKnowsItsBoard() {
                 Game game = new Game("120000000");
-                assertEquals(game.board(), "120000000");
+                assertEquals("120000000", game.board());
             }
 
             public void testItKnowsItsTurnWhenTurn1() {
                 Game game = new Game("120000000");
-                assertEquals(game.turn(), 1);
+                assertEquals(1, game.turn());
             }
 
             public void testItMarksTheBoardWithPlayerOnesNumber() {
                 Game game = new Game("120000000");
                 game.mark(4);
-                assertEquals(game.board(), "120100000");
+                assertEquals("120100000", game.board());
             }
 
         // with more 1s than 2s
             public void testItKnowsItsTurnWhenTurn2() {
                 Game game = new Game("120100000");
-                assertEquals(game.turn(), 2);
+                assertEquals(2, game.turn());
             }
 
             public void testItMarksTheBoardWithPlayerTwosNumber() {
                 Game game = new Game("120100000");
                 game.mark(7);
-                assertEquals(game.board(), "120100200");
+                assertEquals("120100200", game.board());
             }
 
     // when player1 can win
@@ -56,7 +56,7 @@ public class GameTest extends junit.framework.TestCase {
             public void testGameMarksPlayer1WinCorrectly() {
                 Game game = new Game("120120000");
                 game.mark(7);
-                assertEquals(game.board(), "120120100");
+                assertEquals("120120100", game.board());
             }
 
             public void testGameIsOverWhenPlayer1Wins() {
@@ -64,7 +64,7 @@ public class GameTest extends junit.framework.TestCase {
                 game.mark(7);
                 assertTrue(game.isOver());
                 assertFalse(game.isTie());
-                assertEquals(game.winner(), 1);
+                assertEquals(1, game.winner());
             }
 
     // when player2 can win
@@ -75,7 +75,7 @@ public class GameTest extends junit.framework.TestCase {
             public void testGameMarksPlayer2WinCorrectly() {
                 Game game = new Game("121120000");
                 game.mark(8);
-                assertEquals(game.board(), "121120020");
+                assertEquals("121120020", game.board());
             }
 
             public void testGameIsOverWhenPlayer2Wins() {
@@ -83,7 +83,7 @@ public class GameTest extends junit.framework.TestCase {
                 game.mark(8);
                 assertTrue(game.isOver());
                 assertFalse(game.isTie());
-                assertEquals(game.winner(), 2);
+                assertEquals(2, game.winner());
             }
 
     // when the game can end in a tie
@@ -97,8 +97,8 @@ public class GameTest extends junit.framework.TestCase {
                 game.mark(7);
                 assertTrue(game.isOver());
                 assertTrue(game.isTie());
-                assertEquals(game.board(), "121221112");
-                assertEquals(game.winner(), -1);
+                assertEquals("121221112", game.board());
+                assertEquals(-1, game.winner());
             }
 
     // winning states:
@@ -106,7 +106,7 @@ public class GameTest extends junit.framework.TestCase {
             Game game = new Game(board);
             assertTrue(game.isOver());
             assertFalse(game.isTie());
-            assertEquals(game.winner(), player);
+            assertEquals(player, game.winner());
         }
         public void testItRecognizesAWinsForAllPlayersInAllPositions() {
             assertWinningState("111000000", 1);
@@ -132,7 +132,7 @@ public class GameTest extends junit.framework.TestCase {
             Game game = new Game(board);
             assertFalse(game.isOver());
             assertFalse(game.isTie());
-            assertEquals(game.winner(), -1);
+            assertEquals(-1, game.winner());
         }
         public void testItRecognizesNonFinishedStates() {
             assertNonFinishedState("000000000");
@@ -151,25 +151,25 @@ public class GameTest extends junit.framework.TestCase {
             Game game = new Game("121221112");
             assertTrue(game.isOver());
             assertTrue(game.isTie());
-            assertEquals(game.winner(), -1);
+            assertEquals(-1, game.winner());
         }
 
     // available moves
         public void testAvailableMovesWhenMovesAreAvailable() {
-            assertArrayEquals(new Game("000000000").availableMoves(), new int[]{1,2,3,4,5,6,7,8,9});
-            assertArrayEquals(new Game("100000000").availableMoves(), new int[]{  2,3,4,5,6,7,8,9});
-            assertArrayEquals(new Game("100020000").availableMoves(), new int[]{  2,3,4,  6,7,8,9});
-            assertArrayEquals(new Game("101020000").availableMoves(), new int[]{  2,  4,  6,7,8,9});
-            assertArrayEquals(new Game("121020000").availableMoves(), new int[]{      4,  6,7,8,9});
-            assertArrayEquals(new Game("121020010").availableMoves(), new int[]{      4,  6,7,  9});
-            assertArrayEquals(new Game("121220010").availableMoves(), new int[]{          6,7,  9});
-            assertArrayEquals(new Game("121221010").availableMoves(), new int[]{            7,  9});
-            assertArrayEquals(new Game("121221210").availableMoves(), new int[]{                9});
-            assertArrayEquals(new Game("121221211").availableMoves(), new int[]{                 });
+            assertArrayEquals(new int[]{1,2,3,4,5,6,7,8,9}, new Game("000000000").availableMoves());
+            assertArrayEquals(new int[]{  2,3,4,5,6,7,8,9}, new Game("100000000").availableMoves());
+            assertArrayEquals(new int[]{  2,3,4,  6,7,8,9}, new Game("100020000").availableMoves());
+            assertArrayEquals(new int[]{  2,  4,  6,7,8,9}, new Game("101020000").availableMoves());
+            assertArrayEquals(new int[]{      4,  6,7,8,9}, new Game("121020000").availableMoves());
+            assertArrayEquals(new int[]{      4,  6,7,  9}, new Game("121020010").availableMoves());
+            assertArrayEquals(new int[]{          6,7,  9}, new Game("121220010").availableMoves());
+            assertArrayEquals(new int[]{            7,  9}, new Game("121221010").availableMoves());
+            assertArrayEquals(new int[]{                9}, new Game("121221210").availableMoves());
+            assertArrayEquals(new int[]{                 }, new Game("121221211").availableMoves());
         }
 
         public void testAvailableMovesWhenGameIsOver() {
-            assertArrayEquals(new Game("111000000").availableMoves(), new int[]{} );
+            assertArrayEquals(new int[]{}, new Game("111000000").availableMoves());
         }
 
 //    describe '#pristine_mark' do
