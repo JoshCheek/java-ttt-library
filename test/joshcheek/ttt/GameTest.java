@@ -64,6 +64,42 @@ public class GameTest extends junit.framework.TestCase {
                 assertEquals(game.winner(), 1);
             }
 
+    // when player2 can win
+        public void testGameIsNotOverWhenPlayer2CanWin() {
+            assertFalse(new Game("121120000").isOver());
+        }
+        // and player 2 wins
+            public void testGameMarksPlayer2WinCorrectly() {
+                Game game = new Game("121120000");
+                game.mark(8);
+                assertEquals(game.board(), "121120020");
+            }
+
+            public void testGameIsOverWhenPlayer2Wins() {
+                Game game = new Game("121120000");
+                game.mark(8);
+                assertTrue(game.isOver());
+                assertFalse(game.isTie());
+                assertEquals(game.winner(), 2);
+            }
+
+    // when the game is tied
+//    context 'when the game can end in a tie' do
+//      let(:game) { Game.new '121221012' }
+//      subject { game }
+//      it { should_not be_over }
+//      context 'and the game ends in a tie' do
+//        before { game.mark 7 }
+//        it { should be_over }
+//        it { should be_a_tie }
+//        its(:board) { should == '121221112' }
+//        its(:turn)  { should be nil }
+//        specify('player1 should tie') { subject.status(1).should be :ties }
+//        specify('player2 should tie') { subject.status(2).should be :ties }
+//      end
+//    end
+
+
     // winning states:
         private void assertWinningState(String board, int player) {
             Game game = new Game(board);
