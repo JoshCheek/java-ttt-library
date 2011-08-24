@@ -65,7 +65,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="56" column="41" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+            <state line="54" column="26" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -74,7 +74,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="88" column="47" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.44558522">
+            <state line="89" column="0" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.33264887">
               <folding />
             </state>
           </provider>
@@ -98,8 +98,8 @@
         <option value="$PROJECT_DIR$/src/TTT.java" />
         <option value="$PROJECT_DIR$/test/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/ttt/Game.java" />
-        <option value="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
         <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
       </list>
     </option>
   </component>
@@ -456,7 +456,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22076789" sideWeight="0.6963563" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -513,14 +513,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="56" column="41" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+        <state line="54" column="26" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="88" column="47" selection-start="3071" selection-end="3071" vertical-scroll-proportion="0.44558522">
+        <state line="89" column="0" selection-start="3072" selection-end="3072" vertical-scroll-proportion="0.33264887">
           <folding />
         </state>
       </provider>
