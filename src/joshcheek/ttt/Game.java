@@ -42,6 +42,18 @@ public class Game {
     }
 
     public boolean isOver() {
+        int[][] winningStates = {
+                {0, 1, 2}
+        };
+        for(int[] positions : winningStates) {
+            int i1=positions[0], i2=positions[1], i3=positions[2];
+            if( board[i1] == board[i2] && board[i2] == board[i3] )
+                return true;
+        }
         return false;
+    }
+
+    public int winner() {
+        return 1;
     }
 }

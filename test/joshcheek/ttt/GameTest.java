@@ -57,12 +57,16 @@ public class GameTest extends junit.framework.TestCase {
             assertEquals(game.board(), "120120100");
         }
 
+//        public void testGameIsOverWhenPlayer1Wins() {
+//            Game game = new Game("120120000");
+//            game.mark(7);
+//            assertTrue(game.isOver());
+//        }
+
 //        public static
 //      let(:game) { Game.new '120120000' }
 //      context 'and player1 wins' do
 //        before { game.mark 7 }
-//        its(:board) { should == '120120100' }
-//        it { should be_over }
 //        it { should_not be_a_tie }
 //        its(:turn)  { should be nil }
 //        specify('player1 should be the winner') { subject.status(1).should be :wins }
@@ -70,6 +74,64 @@ public class GameTest extends junit.framework.TestCase {
 //      end
 //    end
 
+    // winning states:
+        private void assertWinningState(String board, int player) {
+            Game game = new Game(board);
+            assertTrue(game.isOver());
+            assertEquals(game.winner(), player);
+        }
+        public void testItRecognizesAWinAcrossTheTopByPlayer1() {
+            assertWinningState("111000000", 1);
+        }
+
+//    describe 'winning states' do
+//        ['000111000', 1],
+//        ['000000111', 1],
+//        ['222000000', 2],
+//        ['000222000', 2],
+//        ['000000222', 2],
+//        ['100100100', 1],
+//        ['010010010', 1],
+//        ['001001001', 1],
+//        ['200200200', 2],
+//        ['020020020', 2],
+//        ['002002002', 2],
+//        ['100010001', 1],
+//        ['001010100', 1],
+//        ['200020002', 2],
+//        ['002020200', 2], ].each do |configuration, winner|
+//          it { should_not be_a_tie }
+//          its(:winner) { should be winner }
+//        end
+//      end
+//    end
+//
+//    describe 'non winning states' do
+//      [ '000000000',
+//        '100000000',
+//        '100020000',
+//        '101020000',
+//        '121020000',
+//        '121020010',
+//        '121220010',
+//        '121221010',
+//        '121221012', ].each do |configuration|
+//        context configuration do
+//          subject { Game.new configuration }
+//          it { should_not be_over }
+//          it { should_not be_a_tie }
+//          its(:winner) { should be nil }
+//        end
+//      end
+//      context "121221112, a tied state" do
+//        subject { Game.new '121221112' }
+//        it { should be_over }
+//        it { should be_a_tie }
+//        its(:winner) { should be nil }
+//        specify("status(1) should be :ties") { subject.status(1).should be :ties }
+//        specify("status(2) should be :ties") { subject.status(2).should be :ties }
+//      end
+//    end
 
 }
 
