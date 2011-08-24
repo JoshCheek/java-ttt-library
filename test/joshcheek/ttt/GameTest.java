@@ -101,23 +101,23 @@ public class GameTest extends junit.framework.TestCase {
         }
 
     // non winning states
-        private void assertNonWinningState(String board) {
+        private void assertNonFinishedState(String board) {
             Game game = new Game(board);
             assertFalse(game.isOver());
             assertFalse(game.isTie());
             assertEquals(game.winner(), -1);
         }
-        public void testItRecognizesNonWinningStates() {
-            assertNonWinningState("000000000");
-            assertNonWinningState("000000000");
-            assertNonWinningState("100000000");
-            assertNonWinningState("100020000");
-            assertNonWinningState("101020000");
-            assertNonWinningState("121020000");
-            assertNonWinningState("121020010");
-            assertNonWinningState("121220010");
-            assertNonWinningState("121221010");
-            assertNonWinningState("121221012");
+        public void testItRecognizesNonFinishedStates() {
+            assertNonFinishedState("000000000");
+            assertNonFinishedState("000000000");
+            assertNonFinishedState("100000000");
+            assertNonFinishedState("100020000");
+            assertNonFinishedState("101020000");
+            assertNonFinishedState("121020000");
+            assertNonFinishedState("121020010");
+            assertNonFinishedState("121220010");
+            assertNonFinishedState("121221010");
+            assertNonFinishedState("121221012");
         }
 
         public void testTiedState() {
