@@ -27,7 +27,14 @@ public class Game {
     }
 
     public int turn() {
-        return 1;
+        int numOnesInBoard = 0;
+        int numTwosInBoard = 0;
+        for(char player : board)
+            if(player == '1')
+                numOnesInBoard++;
+            else if(player == '2')
+                numTwosInBoard++;
+        return numOnesInBoard - numTwosInBoard + 1;
     }
 
     public void mark(int i) {

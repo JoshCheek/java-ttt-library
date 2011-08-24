@@ -23,7 +23,7 @@ public class GameTest extends junit.framework.TestCase {
                 assertEquals(game.board(), "120000000");
             }
 
-            public static void testItKnowsItsTurn() {
+            public static void testItKnowsItsTurnWhenTurn1() {
                 Game game = new Game("120000000");
                 assertEquals(game.turn(), 1);
             }
@@ -35,23 +35,16 @@ public class GameTest extends junit.framework.TestCase {
             }
 
         // with more 1s than 2s
-//            public static void testItKnowsItsBoard() {
+            public static void testItKnowsItsTurnWhenTurn2() {
+                Game game = new Game("120100000");
+                assertEquals(game.turn(), 2);
+            }
+//            public static void testItMarksTheBoardWithTheCurrentPlayersNumber() {
 //                String board = "120100000";
-//                Game game = new Game(board);
-//                assertEquals(game.board(), board);
+//                ? game = ?.new(board);
+//                game.mark(7);
+//                assertEqual(game.board(), "120100200");
 //            }
-            /*
-            public static void testItKnowsItsTurn() {
-                String board = "120100000";
-                ? game = ?.new(board);
-                assertEqual(game.turn(), 2);
-            }
-            public static void testItMarksTheBoardWithTheCurrentPlayersNumber() {
-                String board = "120100000";
-                ? game = ?.new(board);
-                game.mark(7);
-                assertEqual(game.board(), "120100200");
-            }
-                 */
+
 }
 
