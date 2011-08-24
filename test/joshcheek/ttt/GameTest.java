@@ -61,6 +61,7 @@ public class GameTest extends junit.framework.TestCase {
                 Game game = new Game("120120000");
                 game.mark(7);
                 assertTrue(game.isOver());
+                assertFalse(game.isTie());
                 assertEquals(game.winner(), 1);
             }
 
