@@ -54,21 +54,38 @@ public class Game {
     }
 
     public int winner() {
-        int[][] winningStates = {
-                {0, 1, 2},
-                {3, 4, 5},
-                {6, 7, 8},
-                {0, 3, 6},
-                {1, 4, 7},
-                {2, 5, 8},
-                {0, 4, 8},
-                {2, 4, 6},
-        };
-        for(int[] positions : winningStates) {
-            int i1=positions[0], i2=positions[1], i3=positions[2];
-            if( (board[i1] == '1' || board[i1] == '2') && board[i1] == board[i2] && board[i2] == board[i3] )
-                return board[i1] == '1' ? 1 : 2;
+        for(int[] positions : winningStates()) {
+            char p1=board[positions[0]], p2=board[positions[1]], p3=board[positions[2]];
+            if( isPlayer(p1) && isSamePlayer(p1, p2, p3) )
+                return numForPlayer(p1);
         }
         return -1;
+    }
+
+    private int numForPlayer(char player) {
+        return  player == '1' ? 1 :
+                player == '2' ? 2 : -1;
+    }
+
+    private boolean isPlayer(char player) {
+        return player == '1' || player == '2';
+    }
+
+    private boolean isSamePlayer(char a, char b, char c) {
+        return a == b && b == c;
+    }
+
+    private int[][] winningStates() {
+        return new int[][]{
+            {0, 1, 2},
+            {3, 4, 5},
+            {6, 7, 8},
+            {0, 3, 6},
+            {1, 4, 7},
+            {2, 5, 8},
+            {0, 4, 8},
+            {2, 4, 6},
+        };
+
     }
 }
