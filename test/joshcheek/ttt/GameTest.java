@@ -1,5 +1,7 @@
 package joshcheek.ttt;
 
+import static org.junit.Assert.assertArrayEquals;
+
 /**
  * Created by IntelliJ IDEA.
  * User: joshuajcheek
@@ -151,6 +153,59 @@ public class GameTest extends junit.framework.TestCase {
             assertTrue(game.isTie());
             assertEquals(game.winner(), -1);
         }
+
+    // available moves
+        public void testAvailableMoves() {
+            assertArrayEquals(new Game("000000000").availableMoves(), new int[]{1,2,3,4,5,6,7,8,9});
+//            assertArrayEquals(new Game("100000000").availableMoves(), new int[]{  2,3,4,5,6,7,8,9});
+//            assertArrayEquals(new Game("100020000").availableMoves(), new int[]{  2,3,4,  6,7,8,9});
+//            assertArrayEquals(new Game("101020000").availableMoves(), new int[]{  2,  4,  6,7,8,9});
+//            assertArrayEquals(new Game("121020000").availableMoves(), new int[]{      4,  6,7,8,9});
+//            assertArrayEquals(new Game("121020010").availableMoves(), new int[]{      4,  6,7,  9});
+//            assertArrayEquals(new Game("121220010").availableMoves(), new int[]{          6,7,  9});
+//            assertArrayEquals(new Game("121221010").availableMoves(), new int[]{            7,  9});
+//            assertArrayEquals(new Game("121221210").availableMoves(), new int[]{                9});
+//            assertArrayEquals(new Game("121221211").availableMoves(), new int[]{                 });
+
+//      }.each do |board, available_moves|
+//        specify "#{board} should be able to move to #{available_moves.inspect}" do
+//          Game.new(board).available_moves.should == available_moves
+//        end
+//      end
+//      specify "It doesn't show available moves when a game is over" do
+//        Game.new('111000000').available_moves.should be_empty
+//      end
+//    end
+        }
+//
+//    describe '#winning_positions' do
+//      [ ['111220000', [1, 2, 3]],
+//        ['220111000', [4, 5, 6]],
+//        ['220000111', [7, 8, 9]],
+//        ['120120100', [1, 4, 7]],
+//        ['210210010', [2, 5, 8]],
+//        ['201201001', [3, 6, 9]],
+//        ['120210001', [1, 5, 9]],
+//        ['021210100', [3, 5, 7]],
+//        ['021210100', [3, 5, 7]],
+//        ['211210200', [1, 4, 7]],
+//      ].each do |board, positions|
+//        it "Knows which positions won" do
+//          Game.new(board).winning_positions.should == positions
+//        end
+//      end
+//    end
+//
+//    describe '#pristine_mark' do
+//      let(:game) { Game.new '000000000' }
+//      subject { game.pristine_mark 1 }
+//      it { should be_an_instance_of Game }
+//      its(:board) { should == '100000000' }
+//      it 'leaves the original in its current condition' do
+//        subject
+//        game.board.should == '000000000'
+//      end
+//    end
 
 }
 

@@ -99,4 +99,8 @@ public class Game {
     public boolean isTie() {
         return isOver() && winner() == -1;
     }
+
+    public int[] availableMoves() {
+        return new int[]{1,2,3,4,5,6,7,8,9};
+    }
 }
