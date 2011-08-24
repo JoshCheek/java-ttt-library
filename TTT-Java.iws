@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" afterPath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
     </list>
     <ignored path="TTT-Java.iws" />
@@ -75,7 +73,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="39" column="18" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.47638604">
+            <state line="48" column="32" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.38398358">
               <folding />
             </state>
           </provider>
@@ -99,8 +97,8 @@
         <option value="$PROJECT_DIR$/src/TTT.java" />
         <option value="$PROJECT_DIR$/test/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/ttt/Game.java" />
-        <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
+        <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
       </list>
     </option>
   </component>
@@ -457,7 +455,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.22076789" sideWeight="0.6963563" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -521,7 +519,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="18" selection-start="1259" selection-end="1259" vertical-scroll-proportion="0.47638604">
+        <state line="48" column="32" selection-start="1529" selection-end="1529" vertical-scroll-proportion="0.38398358">
           <folding />
         </state>
       </provider>

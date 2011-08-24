@@ -23,28 +23,45 @@ public class GameTest extends junit.framework.TestCase {
                 assertEquals(game.board(), "120000000");
             }
 
-            public static void testItKnowsItsTurnWhenTurn1() {
+            public void testItKnowsItsTurnWhenTurn1() {
                 Game game = new Game("120000000");
                 assertEquals(game.turn(), 1);
             }
 
-            public static void testItMarksTheBoardWithPlayerOnesNumber() {
+            public void testItMarksTheBoardWithPlayerOnesNumber() {
                 Game game = new Game("120000000");
                 game.mark(4);
                 assertEquals(game.board(), "120100000");
             }
 
         // with more 1s than 2s
-            public static void testItKnowsItsTurnWhenTurn2() {
+            public void testItKnowsItsTurnWhenTurn2() {
                 Game game = new Game("120100000");
                 assertEquals(game.turn(), 2);
             }
 
-            public static void testItMarksTheBoardWithPlayerTwosNumber() {
+            public void testItMarksTheBoardWithPlayerTwosNumber() {
                 Game game = new Game("120100000");
                 game.mark(7);
                 assertEquals(game.board(), "120100200");
             }
+
+    // when player1 can win
+//        public static
+//      let(:game) { Game.new '120120000' }
+//      subject { game }
+//      it { should_not be_over }
+//      context 'and player1 wins' do
+//        before { game.mark 7 }
+//        its(:board) { should == '120120100' }
+//        it { should be_over }
+//        it { should_not be_a_tie }
+//        its(:turn)  { should be nil }
+//        specify('player1 should be the winner') { subject.status(1).should be :wins }
+//        specify('player2 should be the loser')  { subject.status(2).should be :loses }
+//      end
+//    end
+
 
 }
 
