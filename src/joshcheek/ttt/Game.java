@@ -42,6 +42,10 @@ public class Game {
     }
 
     public boolean isOver() {
+        return winner() != -1;
+    }
+
+    public int winner() {
         int[][] winningStates = {
                 {0, 1, 2},
                 {3, 4, 5},
@@ -49,13 +53,9 @@ public class Game {
         };
         for(int[] positions : winningStates) {
             int i1=positions[0], i2=positions[1], i3=positions[2];
-            if( board[i1] == '1' && board[i1] == board[i2] && board[i2] == board[i3] )
-                return true;
+            if( (board[i1] == '1' || board[i1] == '2') && board[i1] == board[i2] && board[i2] == board[i3] )
+                return board[i1] == '1' ? 1 : 2;
         }
-        return false;
-    }
-
-    public int winner() {
-        return 1;
+        return -1;
     }
 }
