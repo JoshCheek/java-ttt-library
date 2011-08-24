@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/TTT.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/test/TTTTest.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.ipr" afterPath="$PROJECT_DIR$/TTT-Java.ipr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ttt-java.iml" afterPath="$PROJECT_DIR$/ttt-java.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ttt/Game.java" afterPath="$PROJECT_DIR$/src/ttt/Game.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/ttt/GameTest.java" />
     </list>
     <ignored path="TTT-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -68,7 +65,7 @@
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="18" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+            <state line="15" column="16" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -77,7 +74,7 @@
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="49" selection-start="334" selection-end="334" vertical-scroll-proportion="0.43526787">
+            <state line="16" column="42" selection-start="413" selection-end="413" vertical-scroll-proportion="0.5263158">
               <folding />
             </state>
           </provider>
@@ -99,8 +96,8 @@
       <list>
         <option value="$PROJECT_DIR$/test/TTTTest.java" />
         <option value="$PROJECT_DIR$/src/TTT.java" />
-        <option value="$PROJECT_DIR$/src/ttt/Game.java" />
         <option value="$PROJECT_DIR$/test/ttt/GameTest.java" />
+        <option value="$PROJECT_DIR$/src/ttt/Game.java" />
       </list>
     </option>
   </component>
@@ -221,7 +218,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.testReturnNumber">
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration default="false" name="GameTest" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ttt-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -251,6 +248,50 @@
       <option name="PACKAGE_NAME" value="ttt" />
       <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
       <option name="METHOD_NAME" value="testReturnNumber" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ttt" />
+      <option name="MAIN_CLASS_NAME" value="ttt.TTTTest" />
+      <option name="METHOD_NAME" value="testItHasNoMovesWhenCreatedWithoutAnArgument" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="ttt" />
+      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
+      <option name="METHOD_NAME" value="testItHasNoMovesWhenCreatedWithoutAnArgument" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -340,9 +381,11 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <list size="2">
+    <list size="4">
       <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest" />
       <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.testReturnNumber" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -384,14 +427,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32848838" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24926108" sideWeight="0.6708861" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24926108" sideWeight="0.68213785" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32911393" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.31786215" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -448,14 +491,14 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="18" selection-start="103" selection-end="103" vertical-scroll-proportion="0.0">
+        <state line="15" column="16" selection-start="290" selection-end="290" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="49" selection-start="334" selection-end="334" vertical-scroll-proportion="0.43526787">
+        <state line="16" column="42" selection-start="413" selection-end="413" vertical-scroll-proportion="0.5263158">
           <folding />
         </state>
       </provider>

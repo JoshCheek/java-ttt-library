@@ -12,7 +12,7 @@ public class Game {
 
     }
 
-    public int returnNumber() {
-        return 5;
+    public String board() {
+        return "000000000";
     }
 }
