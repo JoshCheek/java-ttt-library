@@ -101,6 +101,20 @@ public class Game {
     }
 
     public int[] availableMoves() {
-        return new int[]{1,2,3,4,5,6,7,8,9};
+        if(isOver())
+            return new int[0];
+        int size=0;
+        for(int read=0; read<9; ++read)
+            if(isAvailable(read))
+                ++size;
+        int availableMoves[] = new int[size];
+        for(int read=0, write=0; read<9; ++read)
+            if(isAvailable(read))
+                availableMoves[write++]=read+1 ;
+        return availableMoves;
+    }
+
+    private boolean isAvailable(int position) {
+        return !isPlayer(board[position]);
     }
 }

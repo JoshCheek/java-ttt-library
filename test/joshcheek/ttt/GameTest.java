@@ -155,27 +155,21 @@ public class GameTest extends junit.framework.TestCase {
         }
 
     // available moves
-        public void testAvailableMoves() {
+        public void testAvailableMovesWhenMovesAreAvailable() {
             assertArrayEquals(new Game("000000000").availableMoves(), new int[]{1,2,3,4,5,6,7,8,9});
-//            assertArrayEquals(new Game("100000000").availableMoves(), new int[]{  2,3,4,5,6,7,8,9});
-//            assertArrayEquals(new Game("100020000").availableMoves(), new int[]{  2,3,4,  6,7,8,9});
-//            assertArrayEquals(new Game("101020000").availableMoves(), new int[]{  2,  4,  6,7,8,9});
-//            assertArrayEquals(new Game("121020000").availableMoves(), new int[]{      4,  6,7,8,9});
-//            assertArrayEquals(new Game("121020010").availableMoves(), new int[]{      4,  6,7,  9});
-//            assertArrayEquals(new Game("121220010").availableMoves(), new int[]{          6,7,  9});
-//            assertArrayEquals(new Game("121221010").availableMoves(), new int[]{            7,  9});
-//            assertArrayEquals(new Game("121221210").availableMoves(), new int[]{                9});
-//            assertArrayEquals(new Game("121221211").availableMoves(), new int[]{                 });
+            assertArrayEquals(new Game("100000000").availableMoves(), new int[]{  2,3,4,5,6,7,8,9});
+            assertArrayEquals(new Game("100020000").availableMoves(), new int[]{  2,3,4,  6,7,8,9});
+            assertArrayEquals(new Game("101020000").availableMoves(), new int[]{  2,  4,  6,7,8,9});
+            assertArrayEquals(new Game("121020000").availableMoves(), new int[]{      4,  6,7,8,9});
+            assertArrayEquals(new Game("121020010").availableMoves(), new int[]{      4,  6,7,  9});
+            assertArrayEquals(new Game("121220010").availableMoves(), new int[]{          6,7,  9});
+            assertArrayEquals(new Game("121221010").availableMoves(), new int[]{            7,  9});
+            assertArrayEquals(new Game("121221210").availableMoves(), new int[]{                9});
+            assertArrayEquals(new Game("121221211").availableMoves(), new int[]{                 });
+        }
 
-//      }.each do |board, available_moves|
-//        specify "#{board} should be able to move to #{available_moves.inspect}" do
-//          Game.new(board).available_moves.should == available_moves
-//        end
-//      end
-//      specify "It doesn't show available moves when a game is over" do
-//        Game.new('111000000').available_moves.should be_empty
-//      end
-//    end
+        public void testAvailableMovesWhenGameIsOver() {
+            assertArrayEquals(new Game("111000000").availableMoves(), new int[]{} );
         }
 //
 //    describe '#winning_positions' do
