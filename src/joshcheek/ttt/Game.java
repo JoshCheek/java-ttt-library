@@ -1,4 +1,4 @@
-package ttt;
+package joshcheek.ttt;
 
 /**
  * Created by IntelliJ IDEA.
@@ -8,7 +8,7 @@ package ttt;
  * To change this template use File | Settings | File Templates.
  */
 public class Game {
-    private String board;
+    private char[] board;
 
     public static void main(String[] args) {
 
@@ -19,14 +19,18 @@ public class Game {
     }
 
     public Game(String board) {
-        this.board = new String(board);
+        this.board = board.toCharArray();
     }
 
     public String board() {
-        return board;
+        return new String(board);
     }
 
     public int turn() {
         return 1;
+    }
+
+    public void mark(int i) {
+        board[i-1] = '1';
     }
 }

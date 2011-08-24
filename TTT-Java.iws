@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="75c53f30-a3f4-4854-a33c-81346f8e9e9d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ttt/Game.java" afterPath="$PROJECT_DIR$/src/ttt/Game.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/ttt/GameTest.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/ttt/Game.java" afterPath="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/test/ttt/GameTest.java" afterPath="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TTT-Java.iws" afterPath="$PROJECT_DIR$/TTT-Java.iws" />
     </list>
     <ignored path="TTT-Java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -63,18 +64,18 @@
   <component name="FileEditorManager">
     <leaf>
       <file leaf-file-name="Game.java" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
+        <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+            <state line="33" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="GameTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
+        <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="49" selection-start="713" selection-end="731" vertical-scroll-proportion="0.42669585">
+            <state line="35" column="30" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.59958935">
               <folding />
             </state>
           </provider>
@@ -98,6 +99,8 @@
         <option value="$PROJECT_DIR$/src/TTT.java" />
         <option value="$PROJECT_DIR$/test/ttt/GameTest.java" />
         <option value="$PROJECT_DIR$/src/ttt/Game.java" />
+        <option value="$PROJECT_DIR$/src/joshcheek/ttt/Game.java" />
+        <option value="$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java" />
       </list>
     </option>
   </component>
@@ -217,58 +220,17 @@
       <recent name="ttt" />
       <recent name="" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="joshcheek" />
+    </key>
   </component>
-  <component name="RunManager" selected="JUnit.GameTest.testItKnowsItsTurn">
-    <configuration default="false" name="TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ttt-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ttt" />
-      <option name="MAIN_CLASS_NAME" value="ttt.TTTTest" />
-      <option name="METHOD_NAME" value="testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
-    <configuration default="false" name="GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" type="JUnit" factoryName="JUnit" temporary="true">
-      <module name="ttt-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ttt" />
-      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
-      <option name="METHOD_NAME" value="testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="moduleWithDependencies" />
-      </option>
-      <envs />
-      <patterns />
-      <RunnerSettings RunnerId="Run" />
-      <ConfigurationWrapper RunnerId="Run" />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.GameTest">
     <configuration default="false" name="GameTest.testItKnowsItsBoard" type="JUnit" factoryName="JUnit" temporary="true">
       <module name="ttt-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ttt" />
-      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
       <option name="METHOD_NAME" value="testItKnowsItsBoard" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
@@ -286,7 +248,7 @@
       <method />
     </configuration>
     <configuration default="false" name="Game" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="ttt.Game" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.Game" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -305,9 +267,53 @@
       <module name="ttt-java" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="ttt" />
-      <option name="MAIN_CLASS_NAME" value="ttt.GameTest" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
       <option name="METHOD_NAME" value="testItKnowsItsTurn" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <envs />
+      <patterns />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+      <method />
+    </configuration>
+    <configuration default="false" name="GameTest.testItMarksTheBoardWithTheCurrentPlayersNumber" type="JUnit" factoryName="JUnit" temporary="true">
+      <module name="ttt-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="joshcheek.ttt" />
+      <option name="MAIN_CLASS_NAME" value="joshcheek.ttt.GameTest" />
+      <option name="METHOD_NAME" value="testItMarksTheBoardWithTheCurrentPlayersNumber" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" />
       <option name="PARAMETERS" />
@@ -398,11 +404,11 @@
       </method>
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TTTTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.GameTest.testItHasNoMovesWhenCreatedWithoutAnArgument" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsBoard" />
-      <item index="3" class="java.lang.String" itemvalue="Application.Game" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsTurn" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsBoard" />
+      <item index="1" class="java.lang.String" itemvalue="Application.Game" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.GameTest.testItKnowsItsTurn" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.GameTest" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.GameTest.testItMarksTheBoardWithTheCurrentPlayersNumber" />
     </list>
     <configuration name="&lt;template&gt;" type="WebApp" default="true" selected="false">
       <Host>localhost</Host>
@@ -436,7 +442,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="208" y="22" width="1063" height="829" extended-state="0" />
+    <frame x="75" y="22" width="1194" height="859" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -444,14 +450,14 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32630098" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32523617" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24926108" sideWeight="0.6835443" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.22076789" sideWeight="0.6963563" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3164557" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.30364373" sideWeight="0.9991274" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -506,16 +512,16 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ttt/Game.java">
+    <entry file="file://$PROJECT_DIR$/src/joshcheek/ttt/Game.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="17" selection-start="504" selection-end="504" vertical-scroll-proportion="0.0">
+        <state line="33" column="25" selection-start="591" selection-end="591" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/ttt/GameTest.java">
+    <entry file="file://$PROJECT_DIR$/test/joshcheek/ttt/GameTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="49" selection-start="713" selection-end="731" vertical-scroll-proportion="0.42669585">
+        <state line="35" column="30" selection-start="1092" selection-end="1092" vertical-scroll-proportion="0.59958935">
           <folding />
         </state>
       </provider>
