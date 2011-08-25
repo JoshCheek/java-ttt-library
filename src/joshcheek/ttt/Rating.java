@@ -45,60 +45,60 @@ public class Rating {
         if(currentPlayer == playerNum) {
             if(anyGuaranteedWin(playerNum))      return 1;
             if(allGuaranteedLoss(playerNum))     return -1;
-                                                 return 9.0; //relativeRatingForComputer();
+                                                 return relativeRatingForComputer(playerNum);
         }
         if(anyGuaranteedLoss(playerNum))         return -1;
         if(allGuaranteedWin(playerNum))          return 1;
-                                                 return 9.0; //relativeRatingForOpponent();
+                                                 return relativeRatingForOpponent(playerNum);
+    }
+
+    private double relativeRatingForOpponent(int playerNum) {
+        double sum=0;
+        for(Rating child : children())
+            sum += child.ratingFor(playerNum);
+        return sum / children().length;
+    }
+
+    private double relativeRatingForComputer(int playerNum) {
+        double sum=0, size=0;
+        for(Rating child : children()) {
+            double rating = child.ratingFor(playerNum);
+            if(rating != -1) {
+                sum += rating;
+                ++size;
+            }
+        }
+        return sum / size;
     }
 
     private boolean allGuaranteedWin(int playerNum) {
-        for(Rating rating : children)
+        for(Rating rating : children())
             if(rating.ratingFor(playerNum) != 1.0)
                 return false;
         return true;
     }
 
     private boolean anyGuaranteedLoss(int playerNum) {
-        for(Rating rating : children)
+        for(Rating rating : children())
             if(rating.ratingFor(playerNum) == -1.0)
                 return true;
         return false;
     }
 
     private boolean anyGuaranteedWin(int playerNum) {
-        for(Rating rating : children)
+        for(Rating rating : children())
             if(rating.ratingFor(playerNum) == 1.0)
                 return true;
         return false;
     }
 
     private boolean allGuaranteedLoss(int playerNum) {
-        for(Rating rating : children)
+        for(Rating rating : children())
             if(rating.ratingFor(playerNum) != -1.0)
                 return false;
         return true;
     }
 
-
-//    def rating_for(player_number)
-//      else
-//        ratings = children.map { |_, child| child.rating_for player_number }
-//        crnt_player = game.turn
-//        if crnt_player == player_number
-//          return  1 if ratings.any? { |rating| rating ==  1 }   # if my turn, and I can move to a win, then I win
-//          return -1 if ratings.all? { |rating| rating == -1 }   # if my turn, and all moves are losses, then I lose
-//          ratings.reject! { |rating| rating == -1 }
-//          return ratings.inject(:+).to_f / ratings.size         # otherwise, rating is the average of non-losing moves (I will never make a losing move)
-//        else
-//          return -1 if ratings.any? { |rating| rating == -1 }   # if his turn, and he can win, then I lose
-//          return  1 if ratings.all? { |rating| rating ==  1 }   # if his turn, and all his moves lead to wins for me, then I win
-//          return ratings.inject(:+).to_f / ratings.size         # otherwise, rating is the average of possible move scores
-//        end
-//      end
-//    end
-//
-//  end
 
     public static double rate_for(String board, int player) {
         return new Rating(board).ratingFor(player);

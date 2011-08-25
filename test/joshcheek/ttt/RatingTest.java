@@ -25,10 +25,10 @@ public class RatingTest extends junit.framework.TestCase {
         assertEquals(-1.0, Rating.rate_for("110220100", 1));
     }
 
-//    it 'rates as 0 if a board leads to a guaranteed tie' do
-//      rate['112221100', 1].should == 0
-//    end
-//
+    public void testItRatesAs0IfBoardIsAGuaranteedTie() {
+        assertEquals(0.0, Rating.rate_for("112221100", 1));
+    }
+
 //    it 'will rate a board for both player1 and player2' do
 //      rate['110220000', 1].should == 1
 //      rate['110220000', 2].should == -1
