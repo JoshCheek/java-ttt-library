@@ -179,10 +179,10 @@ public class GameTest extends junit.framework.TestCase {
             assertEquals("100000000", marked.board());
         }
 
-//        public void testPristineMoveLeavesOriginalPristine() {
-//            Game initial = Game.new("000000000");
-//            Game marked  = initial.pristineMove(1);
-//            assertEquals("000000000", initial.board());
-//        }
+        public void testPristineMoveLeavesOriginalPristine() {
+            Game initial = new Game("000000000");
+            Game marked  = initial.pristineMove(1);
+            assertEquals("000000000", initial.board());
+        }
 }
 

@@ -125,7 +125,8 @@ public class Game {
     }
 
     public Game pristineMove(int position) {
-        mark(position);
-        return this;
+        Game newGame = new Game(board());
+        newGame.mark(position);
+        return newGame;
     }
 }
