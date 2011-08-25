@@ -7,7 +7,38 @@ package joshcheek.ttt;
  * Time: 12:11 PM
  * To change this template use File | Settings | File Templates.
  */
-public class CongruencyTest {
+public class CongruencyTest extends junit.framework.TestCase {
+
+    private void assertCongruent(String board1, String board2) {
+        assertTrue(Congruency.areCongruent(board1, board2));
+    }
+
+    public void testItKnows100000000_001000000_000000100_000000001AreAllCongruent() {
+        assertCongruent("100000000", "001000000");
+        assertCongruent("100000000", "000000100");
+        assertCongruent("100000000", "000000001");
+    }
+
+    public void testItKnows120000000_100200000AreAllCongruent() {
+        assertCongruent("120000000", "100200000");
+    }
+
+    public void testItKnows100020000_001020000_000020100_000020001AreAllCongruent() {
+        assertCongruent("100020000", "001020000");
+        assertCongruent("100020000", "000020100");
+        assertCongruent("100020000", "000020001");
+    }
+
+    public void testItKnows120000001_100200001AreAllCongruent() {
+        assertCongruent("120000001", "100200001");
+    }
+
+    public void testItKnows100020100_000020101_001020001_101020000AreAllCongruent() {
+        assertCongruent("100020100", "000020101");
+        assertCongruent("100020100", "001020001");
+        assertCongruent("100020100", "101020000");
+    }
+
 
 //    module TTT
 //      describe Congruency do

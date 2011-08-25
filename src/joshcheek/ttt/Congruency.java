@@ -9,4 +9,7 @@ package joshcheek.ttt;
  */
 public class Congruency {
 
+    public static boolean areCongruent(String board1, String board2) {
+        return true;
+    }
 }
