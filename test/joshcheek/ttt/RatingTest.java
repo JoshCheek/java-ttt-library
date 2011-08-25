@@ -47,7 +47,17 @@ public class RatingTest extends junit.framework.TestCase {
             assertFalse(1.0 == worse);
         }
 
-//
+
+    public void testItKnowsRatingsForCongruentBoards() {
+        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("001000000", 1));
+        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("000000100", 1));
+        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("000000001", 1));
+        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("001000000", 2));
+        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("000000100", 2));
+        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("000000001", 2));
+    }
+
+
 //  describe RATINGS do
 //    it "holds the calculated values of Rating so we don't need to calculate in real time" do
 //      %w[121020010 121020210 121000200 121100200 121100220].each do |board|
@@ -55,15 +65,6 @@ public class RatingTest extends junit.framework.TestCase {
 //      end
 //    end
 //
-//    it 'knows ratings for congruent boards' do
-//      topleft  = RATINGS['100000000']
-//      topright = RATINGS['001000000']
-//      botleft  = RATINGS['000000100']
-//      botright = RATINGS['000000001']
-//      topleft.should == topright
-//      topleft.should == botleft
-//      topleft.should == botright
-//    end
 //
 //    describe "if for some reason it doesn't know the rating" do
 //      let(:board)         { '121001200' }
