@@ -10,7 +10,10 @@ package joshcheek.ttt;
 public class Congruency {
 
     public static boolean areCongruent(String board1, String board2) {
-        return true;
+        for(String congruentBoard : congruents(board1))
+            if(congruentBoard.equals(board2))
+                return true;
+        return false;
     }
 
     public static String[] congruents(String board) {

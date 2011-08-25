@@ -46,125 +46,125 @@ public class CongruencyTest extends junit.framework.TestCase {
     }
 
 
-//    public void testItKnows100000000IsNotCongruentWith010000000() {
-//        assertNotCongruent("100000000", "010000000");
-//    }
-//
-//    public void testItKnows100000000IsNotCongruentWith000010000() {
-//        assertNotCongruent("100000000", "000010000");
-//    }
-//
-//    public void testItKnows100000000IsNotCongruentWith120000000() {
-//        assertNotCongruent("100000000", "120000000");
-//    }
-//
-//    public void testItKnows010000000IsNotCongruentWith100000000() {
-//        assertNotCongruent("010000000", "100000000");
-//    }
-//
-//    public void testItKnows010000000IsNotCongruentWith000010000() {
-//        assertNotCongruent("010000000", "000010000");
-//    }
-//
-//    public void testItKnows010000000IsNotCongruentWith120000000() {
-//        assertNotCongruent("010000000", "120000000");
-//    }
-//
-//    public void testItKnows000010000IsNotCongruentWith100000000() {
-//        assertNotCongruent("000010000", "100000000");
-//    }
-//
-//    public void testItKnows000010000IsNotCongruentWith010000000() {
-//        assertNotCongruent("000010000", "010000000");
-//    }
-//
-//    public void testItKnows000010000IsNotCongruentWith120000000() {
-//        assertNotCongruent("000010000", "120000000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith100000000() {
-//        assertNotCongruent("120000000", "100000000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith010000000() {
-//        assertNotCongruent("120000000", "010000000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith000010000() {
-//        assertNotCongruent("120000000", "000010000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith102000000() {
-//        assertNotCongruent("120000000", "102000000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith100020000() {
-//        assertNotCongruent("120000000", "100020000");
-//    }
-//
-//    public void testItKnows120000000IsNotCongruentWith100000002() {
-//        assertNotCongruent("120000000", "100000002");
-//    }
-//
-//    public void testItKnows102000000IsNotCongruentWith120000000() {
-//        assertNotCongruent("102000000", "120000000");
-//    }
-//
-//    public void testItKnows102000000IsNotCongruentWith100020000() {
-//        assertNotCongruent("102000000", "100020000");
-//    }
-//
-//    public void testItKnows102000000IsNotCongruentWith100000002() {
-//        assertNotCongruent("102000000", "100000002");
-//    }
-//
-//    public void testItKnows100020000IsNotCongruentWith120000000() {
-//        assertNotCongruent("100020000", "120000000");
-//    }
-//
-//    public void testItKnows100020000IsNotCongruentWith102000000() {
-//        assertNotCongruent("100020000", "102000000");
-//    }
-//
-//    public void testItKnows100020000IsNotCongruentWith100000002() {
-//        assertNotCongruent("100020000", "100000002");
-//    }
-//
-//    public void testItKnows100000002IsNotCongruentWith120000000() {
-//        assertNotCongruent("100000002", "120000000");
-//    }
-//
-//    public void testItKnows100000002IsNotCongruentWith102000000() {
-//        assertNotCongruent("100000002", "102000000");
-//    }
-//
-//    public void testItKnows100000002IsNotCongruentWith100020000() {
-//        assertNotCongruent("100000002", "100020000");
-//    }
-//
-//    public void testItKnows110020000IsNotCongruentWith101020000() {
-//        assertNotCongruent("110020000", "101020000");
-//    }
-//
-//    public void testItKnows110020000IsNotCongruentWith100020001() {
-//        assertNotCongruent("110020000", "100020001");
-//    }
-//
-//    public void testItKnows101020000IsNotCongruentWith110020000() {
-//        assertNotCongruent("101020000", "110020000");
-//    }
-//
-//    public void testItKnows101020000IsNotCongruentWith100020001() {
-//        assertNotCongruent("101020000", "100020001");
-//    }
-//
-//    public void testItKnows100020001IsNotCongruentWith110020000() {
-//        assertNotCongruent("100020001", "110020000");
-//    }
-//
-//    public void testItKnows100020001IsNotCongruentWith101020000() {
-//        assertNotCongruent("100020001", "101020000");
-//    }
+    public void testItKnows100000000IsNotCongruentWith010000000() {
+        assertNotCongruent("100000000", "010000000");
+    }
+
+    public void testItKnows100000000IsNotCongruentWith000010000() {
+        assertNotCongruent("100000000", "000010000");
+    }
+
+    public void testItKnows100000000IsNotCongruentWith120000000() {
+        assertNotCongruent("100000000", "120000000");
+    }
+
+    public void testItKnows010000000IsNotCongruentWith100000000() {
+        assertNotCongruent("010000000", "100000000");
+    }
+
+    public void testItKnows010000000IsNotCongruentWith000010000() {
+        assertNotCongruent("010000000", "000010000");
+    }
+
+    public void testItKnows010000000IsNotCongruentWith120000000() {
+        assertNotCongruent("010000000", "120000000");
+    }
+
+    public void testItKnows000010000IsNotCongruentWith100000000() {
+        assertNotCongruent("000010000", "100000000");
+    }
+
+    public void testItKnows000010000IsNotCongruentWith010000000() {
+        assertNotCongruent("000010000", "010000000");
+    }
+
+    public void testItKnows000010000IsNotCongruentWith120000000() {
+        assertNotCongruent("000010000", "120000000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith100000000() {
+        assertNotCongruent("120000000", "100000000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith010000000() {
+        assertNotCongruent("120000000", "010000000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith000010000() {
+        assertNotCongruent("120000000", "000010000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith102000000() {
+        assertNotCongruent("120000000", "102000000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith100020000() {
+        assertNotCongruent("120000000", "100020000");
+    }
+
+    public void testItKnows120000000IsNotCongruentWith100000002() {
+        assertNotCongruent("120000000", "100000002");
+    }
+
+    public void testItKnows102000000IsNotCongruentWith120000000() {
+        assertNotCongruent("102000000", "120000000");
+    }
+
+    public void testItKnows102000000IsNotCongruentWith100020000() {
+        assertNotCongruent("102000000", "100020000");
+    }
+
+    public void testItKnows102000000IsNotCongruentWith100000002() {
+        assertNotCongruent("102000000", "100000002");
+    }
+
+    public void testItKnows100020000IsNotCongruentWith120000000() {
+        assertNotCongruent("100020000", "120000000");
+    }
+
+    public void testItKnows100020000IsNotCongruentWith102000000() {
+        assertNotCongruent("100020000", "102000000");
+    }
+
+    public void testItKnows100020000IsNotCongruentWith100000002() {
+        assertNotCongruent("100020000", "100000002");
+    }
+
+    public void testItKnows100000002IsNotCongruentWith120000000() {
+        assertNotCongruent("100000002", "120000000");
+    }
+
+    public void testItKnows100000002IsNotCongruentWith102000000() {
+        assertNotCongruent("100000002", "102000000");
+    }
+
+    public void testItKnows100000002IsNotCongruentWith100020000() {
+        assertNotCongruent("100000002", "100020000");
+    }
+
+    public void testItKnows110020000IsNotCongruentWith101020000() {
+        assertNotCongruent("110020000", "101020000");
+    }
+
+    public void testItKnows110020000IsNotCongruentWith100020001() {
+        assertNotCongruent("110020000", "100020001");
+    }
+
+    public void testItKnows101020000IsNotCongruentWith110020000() {
+        assertNotCongruent("101020000", "110020000");
+    }
+
+    public void testItKnows101020000IsNotCongruentWith100020001() {
+        assertNotCongruent("101020000", "100020001");
+    }
+
+    public void testItKnows100020001IsNotCongruentWith110020000() {
+        assertNotCongruent("100020001", "110020000");
+    }
+
+    public void testItKnows100020001IsNotCongruentWith101020000() {
+        assertNotCongruent("100020001", "101020000");
+    }
 
     public void testItFindsCongruentBoards() {
         String[] expected = new String[]{"abcdefghi", "gdahebifc", "ihgfedcba", "cfibehadg", "ghidefabc", "adgbehcfi", "cbafedihg", "ifchebgda"};
