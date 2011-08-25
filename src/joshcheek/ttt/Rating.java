@@ -8,4 +8,7 @@ package joshcheek.ttt;
  * To change this template use File | Settings | File Templates.
  */
 public class Rating {
+    public static double rate_for(String board, int player) {
+        return 1.0;
+    }
 }
