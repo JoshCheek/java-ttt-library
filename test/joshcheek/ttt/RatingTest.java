@@ -29,24 +29,24 @@ public class RatingTest extends junit.framework.TestCase {
         assertEquals(0.0, Rating.rate_for("112221100", 1));
     }
 
-//    it 'will rate a board for both player1 and player2' do
-//      rate['110220000', 1].should == 1
-//      rate['110220000', 2].should == -1
-//    end
-//
-//    it 'rates player1 and player2 the same if board is guaranteed to tie' do
-//      rate['112221100', 1].should == rate['112221100', 2]
-//    end
-//
-//    context "when it doesn't have a guaranteed win" do
-//      specify "ratings have relative merit such that a move with more opportunities to win will be rated higher" do
-//        better, worse = '121001200', '121100200'
-//        rate[better, 1].should be > rate[worse, 1]
-//        rate[better, 1].should_not == 1
-//        rate[worse, 1].should_not == 1
-//      end
-//    end
-//  end
+    public void testItRatesForBothPlayer1AndPlayer2() {
+        assertEquals(1.0,  Rating.rate_for("110220000", 1));
+        assertEquals(-1.0, Rating.rate_for("110220000", 2));
+    }
+
+    public void testItRatesPlayer1AndPlayer2TheSameIfBoardIsGuaranteedToTie() {
+        assertEquals(Rating.rate_for("112221100", 1), Rating.rate_for("112221100", 2));
+    }
+
+    // when it doesn't have a guaranteed win
+        public void testRatingsHaveRelativeMeritSuchThatAMoveWithMoreOpportunitiesToWinWillBeRatedHigher() {
+            double better = Rating.rate_for("121001200", 1);
+            Double worse  = Rating.rate_for("121100200", 1);
+            assertTrue(better > worse);
+            assertFalse(1.0 == better);
+            assertFalse(1.0 == worse);
+        }
+
 //
 //  describe RATINGS do
 //    it "holds the calculated values of Rating so we don't need to calculate in real time" do
