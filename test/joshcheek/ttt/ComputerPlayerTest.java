@@ -8,12 +8,61 @@ package joshcheek.ttt;
  * To change this template use File | Settings | File Templates.
  */
 public class ComputerPlayerTest extends junit.framework.TestCase {
-
-
-//    module TTT
-//      describe ComputerPlayer do
 //
-//        def self.move_for(configuration, player, possible_boards, description)
+//# def self.move_for(configuration, player, possible_boards, description)
+//#   it "takes moves correctly when #{description}" do
+//#     game = Game.new configuration
+//#     computer = ComputerPlayer.new game
+//#     computer.take_turn
+//#     possible_boards.should include game.board
+//#   end
+//# end
+
+    private void assertCorrectMove(String initial, int player, String[] validMoves) {
+        Game game = new Game(initial);
+        ComputerPlayer computer = new ComputerPlayer(game);
+        computer.takeTurn();
+        assertInArray(validMoves, game.board());
+    }
+
+    private void assertInArray(String[] strings, String target) {
+        boolean inAry = false;
+        for(String string : strings)
+            if(string.equals(target))
+                inAry = true;
+        assertTrue(inAry);
+    }
+
+    public void testItAlwaysTakesAWinWhenItCanWinAcrossTop() {
+        assertCorrectMove("110200200", 1, new String[]{"111200200"});
+    }
+
+//    public void testItAlwaysTakesAWinWhenItCan can_win_across_bottom_and_opponent_can_win_across_top() {
+//        assertCorrectMove("220000110", 1, new String[]{"220000111"});
+//    }
+//
+//    public void testItAlwaysTakesAWinWhenItCan can_win_vertically_on_RHS_opponent_can_win_too() {
+//        assertCorrectMove("201201000", 1, new String[]{"201201001"});
+//    }
+//
+//    public void testItAlwaysTakesAWinWhenItCan can_win_vertically_on_RHS_opponent_can_win_too() {
+//        assertCorrectMove("120120000", 1, new String[]{"120120100"});
+//    }
+//
+//    public void testItAlwaysTakesAWinWhenItCan can_win_diagonally() {
+//        assertCorrectMove("102210000", 1, new String[]{"102210001"});
+//    }
+//
+//    public void testItAlwaysTakesAWinWhenItCan can_win_in_two_positions() {
+//        assertCorrectMove("120112020", 1, new String[]{"120112120", "120112021"});
+//    }
+//
+//    public void testItAlwaysTakesAWinWhenItCan 2nd_player_and_1st_can_also_win() {
+//        assertCorrectMove("120021001", 2, new String[]{"120021021"});
+//    }
+
+
+//          def self.move_for(configuration, player, possible_boards, description)
 //          it "takes moves correctly when #{description}" do
 //            game = Game.new configuration
 //            computer = ComputerPlayer.new game
