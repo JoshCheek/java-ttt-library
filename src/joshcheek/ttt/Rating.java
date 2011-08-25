@@ -9,6 +9,6 @@ package joshcheek.ttt;
  */
 public class Rating {
     public static double rate_for(String board, int player) {
-        return 1.0;
+        return new Game(board).winner() == player ? 1.0 : -1.0;
     }
 }

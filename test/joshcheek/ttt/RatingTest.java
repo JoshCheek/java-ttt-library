@@ -9,15 +9,22 @@ package joshcheek.ttt;
  */
 public class RatingTest extends junit.framework.TestCase {
 
-    public void testItRatesAs1IfABoardIsAGuaranteedWin() {
-        assertEquals(1.0, Rating.rate_for("110220000", 1));
+    public void testItRatesAs1IfPlayerWon() {
+        assertEquals(1.0, Rating.rate_for("111220000", 1));
     }
 
+    public void testItRatesAsNegative1IfPlayerLost() {
+        assertEquals(-1.0, Rating.rate_for("110222001", 1));
+    }
+
+//    public void testItRatesAs1IfABoardIsAGuaranteedWin() {
+//        assertEquals(1.0, Rating.rate_for("110220000", 1));
+//    }
 //
-//    it 'rates as -1 if a board can lead to a loss' do
-//      rate['110220100', 1].should == -1
-//    end
-//
+//    public void testItRatesAsNegative1IfABoardIsAGuaranteedLoss() {
+//        assertEquals(-1.0, Rating.rate_for("110220100", 1));
+//    }
+
 //    it 'rates as 0 if a board leads to a guaranteed tie' do
 //      rate['112221100', 1].should == 0
 //    end
