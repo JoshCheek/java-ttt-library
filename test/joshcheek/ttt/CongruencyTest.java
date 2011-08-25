@@ -1,5 +1,7 @@
 package joshcheek.ttt;
 
+import static org.junit.Assert.assertArrayEquals;
+
 /**
  * Created by IntelliJ IDEA.
  * User: joshuajcheek
@@ -11,6 +13,10 @@ public class CongruencyTest extends junit.framework.TestCase {
 
     private void assertCongruent(String board1, String board2) {
         assertTrue(Congruency.areCongruent(board1, board2));
+    }
+
+    private void assertNotCongruent(String board1, String board2) {
+        assertFalse(Congruency.areCongruent(board1, board2));
     }
 
     public void testItKnows100000000_001000000_000000100_000000001AreAllCongruent() {
@@ -40,110 +46,129 @@ public class CongruencyTest extends junit.framework.TestCase {
     }
 
 
-//    module TTT
-//      describe Congruency do
-//        describe '.congruent?' do
-//          [ %w[100000000 001000000 000000100 000000001],
-//            %w[120000000 100200000],
-//            %w[100020000 001020000 000020100 000020001],
-//            %w[120000001 100200001],
-//            %w[100020100 000020101 001020001 101020000],
-//          ].each do |boards|
-//            specify "knows #{boards.inspect} are all congruent" do
-//              boards.each do |board1|
-//                boards.each { |board2| Congruency.should be_congruent(board1, board2) }
-//              end
-//            end
-//          end
+//    public void testItKnows100000000IsNotCongruentWith010000000() {
+//        assertNotCongruent("100000000", "010000000");
+//    }
 //
-//          [ %w[100000000 010000000 000010000 120000000],
-//            %w[120000000 102000000 100020000 100000002],
-//            %w[110020000 101020000 100020001],
-//          ].each do |boards|
-//            specify "knows #{boards.inspect} are not congruent" do
-//              boards.each do |board1|
-//                boards.each do |board2|
-//                  next if board1 == board2
-//                  Congruency.should_not be_congruent(board1, board2)
-//                end
-//              end
-//            end
-//          end
-//        end
+//    public void testItKnows100000000IsNotCongruentWith000010000() {
+//        assertNotCongruent("100000000", "000010000");
+//    }
 //
-//        describe '.reflect_board' do
-//          specify 'abcdefghi should reflect to ghidefabc' do
-//            Congruency.reflect_board('abcdefghi').should == 'ghidefabc'
-//          end
-//          specify 'it should not mutate the original board' do
-//            board = 'abcdefghi'
-//            Congruency.reflect_board board
-//            board.should == 'abcdefghi'
-//          end
-//        end
+//    public void testItKnows100000000IsNotCongruentWith120000000() {
+//        assertNotCongruent("100000000", "120000000");
+//    }
 //
-//        describe '.rotate_board' do
-//          specify 'abcdefghi should rotate to gdahebifc' do
-//            Congruency.rotate_board('abcdefghi').should == 'gdahebifc'
-//          end
-//          specify 'it should not mutate the original board' do
-//            board = 'abcdefghi'
-//            Congruency.rotate_board board
-//            board.should == 'abcdefghi'
-//          end
-//        end
+//    public void testItKnows010000000IsNotCongruentWith100000000() {
+//        assertNotCongruent("010000000", "100000000");
+//    }
 //
-//        describe '.each_rotation' do
-//          let(:rotations) { %w[abcdefghi gdahebifc ihgfedcba cfibehadg] }
-//          subject { Congruency.each_rotation rotations.first }
-//          context 'when not passed a block' do
-//            it { should be_an_instance_of enumerator }
-//            its(:to_a) { should == rotations }
-//          end
-//          context 'when passed a block' do
-//            it 'yields each rotation' do
-//              boards = []
-//              Congruency.each_rotation rotations.first do |rotation|
-//                boards << rotation
-//              end
-//              boards.should == rotations
-//            end
-//          end
-//          it "isn't impacted by mutations" do
-//            Congruency.each_rotation(rotations.first).with_index do |rotation, index|
-//              rotation.should == rotations[index]
-//              rotation[2..5] = 'xxxx'
-//              rotations.first.should == 'abcdefghi'
-//            end
-//          end
-//        end
+//    public void testItKnows010000000IsNotCongruentWith000010000() {
+//        assertNotCongruent("010000000", "000010000");
+//    }
 //
-//        describe '.each_congruent' do
-//          let(:congruents) { %w[abcdefghi gdahebifc ihgfedcba cfibehadg ghidefabc adgbehcfi cbafedihg ifchebgda ] }
-//          context 'when not passed a block' do
-//            subject { Congruency.each_congruent congruents.first }
-//            it { should be_an_instance_of enumerator }
-//            its(:to_a) { should == congruents }
-//          end
-//          context 'when passed a block' do
-//            it 'should yield each congruent board' do
-//              boards = []
-//              Congruency.each_congruent congruents.first do |congruent|
-//                boards << congruent
-//              end
-//              boards.should == congruents
-//            end
-//          end
-//          it "isn't impacted by mutations" do
-//            Congruency.each_congruent(congruents.first).with_index do |congruent, index|
-//              congruent.should == congruents[index]
-//              congruent[2..5] = 'xxxx'
-//              congruents.first.should == "abcdefghi"
-//            end
-//          end
-//        end
+//    public void testItKnows010000000IsNotCongruentWith120000000() {
+//        assertNotCongruent("010000000", "120000000");
+//    }
 //
-//      end
-//    end
+//    public void testItKnows000010000IsNotCongruentWith100000000() {
+//        assertNotCongruent("000010000", "100000000");
+//    }
+//
+//    public void testItKnows000010000IsNotCongruentWith010000000() {
+//        assertNotCongruent("000010000", "010000000");
+//    }
+//
+//    public void testItKnows000010000IsNotCongruentWith120000000() {
+//        assertNotCongruent("000010000", "120000000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith100000000() {
+//        assertNotCongruent("120000000", "100000000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith010000000() {
+//        assertNotCongruent("120000000", "010000000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith000010000() {
+//        assertNotCongruent("120000000", "000010000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith102000000() {
+//        assertNotCongruent("120000000", "102000000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith100020000() {
+//        assertNotCongruent("120000000", "100020000");
+//    }
+//
+//    public void testItKnows120000000IsNotCongruentWith100000002() {
+//        assertNotCongruent("120000000", "100000002");
+//    }
+//
+//    public void testItKnows102000000IsNotCongruentWith120000000() {
+//        assertNotCongruent("102000000", "120000000");
+//    }
+//
+//    public void testItKnows102000000IsNotCongruentWith100020000() {
+//        assertNotCongruent("102000000", "100020000");
+//    }
+//
+//    public void testItKnows102000000IsNotCongruentWith100000002() {
+//        assertNotCongruent("102000000", "100000002");
+//    }
+//
+//    public void testItKnows100020000IsNotCongruentWith120000000() {
+//        assertNotCongruent("100020000", "120000000");
+//    }
+//
+//    public void testItKnows100020000IsNotCongruentWith102000000() {
+//        assertNotCongruent("100020000", "102000000");
+//    }
+//
+//    public void testItKnows100020000IsNotCongruentWith100000002() {
+//        assertNotCongruent("100020000", "100000002");
+//    }
+//
+//    public void testItKnows100000002IsNotCongruentWith120000000() {
+//        assertNotCongruent("100000002", "120000000");
+//    }
+//
+//    public void testItKnows100000002IsNotCongruentWith102000000() {
+//        assertNotCongruent("100000002", "102000000");
+//    }
+//
+//    public void testItKnows100000002IsNotCongruentWith100020000() {
+//        assertNotCongruent("100000002", "100020000");
+//    }
+//
+//    public void testItKnows110020000IsNotCongruentWith101020000() {
+//        assertNotCongruent("110020000", "101020000");
+//    }
+//
+//    public void testItKnows110020000IsNotCongruentWith100020001() {
+//        assertNotCongruent("110020000", "100020001");
+//    }
+//
+//    public void testItKnows101020000IsNotCongruentWith110020000() {
+//        assertNotCongruent("101020000", "110020000");
+//    }
+//
+//    public void testItKnows101020000IsNotCongruentWith100020001() {
+//        assertNotCongruent("101020000", "100020001");
+//    }
+//
+//    public void testItKnows100020001IsNotCongruentWith110020000() {
+//        assertNotCongruent("100020001", "110020000");
+//    }
+//
+//    public void testItKnows100020001IsNotCongruentWith101020000() {
+//        assertNotCongruent("100020001", "101020000");
+//    }
+
+    public void testItFindsCongruentBoards() {
+        String[] expected = new String[]{"abcdefghi", "gdahebifc", "ihgfedcba", "cfibehadg", "ghidefabc", "adgbehcfi", "cbafedihg", "ifchebgda"};
+        assertArrayEquals(expected, Congruency.congruents("abcdefghi"));
+    }
 
 }
