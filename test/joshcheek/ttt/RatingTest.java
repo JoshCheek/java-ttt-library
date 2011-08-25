@@ -49,12 +49,19 @@ public class RatingTest extends junit.framework.TestCase {
 
 
     public void testItKnowsRatingsForCongruentBoards() {
-        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("001000000", 1));
-        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("000000100", 1));
-        assertEquals(Rating.rate_for("100000000", 1), Rating.rate_for("000000001", 1));
-        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("001000000", 2));
-        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("000000100", 2));
-        assertEquals(Rating.rate_for("100000000", 2), Rating.rate_for("000000001", 2));
+        assertCloseEnough("100000000", 1, "001000000", 1);
+        assertCloseEnough("100000000", 1, "000000100", 1);
+        assertCloseEnough("100000000", 1, "000000001", 1);
+        assertCloseEnough("100000000", 2, "001000000", 2);
+        assertCloseEnough("100000000", 2, "000000100", 2);
+        assertCloseEnough("100000000", 2, "000000001", 2);
+    }
+
+    private void assertCloseEnough(String board1, int player1, String board2, int player2) {
+        double rating1 = Rating.rate_for(board1, player1);
+        double rating2 = Rating.rate_for(board2, player2);
+        double delta   = Math.abs(rating1 - rating2);
+        assertTrue(delta < 0.0000001);
     }
 
 
