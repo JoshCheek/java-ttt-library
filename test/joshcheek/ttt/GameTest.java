@@ -172,16 +172,17 @@ public class GameTest extends junit.framework.TestCase {
             assertArrayEquals(new int[]{}, new Game("111000000").availableMoves());
         }
 
-//    describe '#pristine_mark' do
-//      let(:game) { Game.new '000000000' }
-//      subject { game.pristine_mark 1 }
-//      it { should be_an_instance_of Game }
-//      its(:board) { should == '100000000' }
-//      it 'leaves the original in its current condition' do
-//        subject
-//        game.board.should == '000000000'
-//      end
-//    end
+    // Game#pristineMove()
+        public void testPristineMoveReturnsGameWithMoveMade() {
+            Game initial = new Game("000000000");
+            Game marked  = initial.pristineMove(1);
+            assertEquals("100000000", marked.board());
+        }
 
+//        public void testPristineMoveLeavesOriginalPristine() {
+//            Game initial = Game.new("000000000");
+//            Game marked  = initial.pristineMove(1);
+//            assertEquals("000000000", initial.board());
+//        }
 }
 

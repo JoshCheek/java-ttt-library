@@ -123,4 +123,9 @@ public class Game {
     private boolean isAvailable(int position) {
         return !isPlayer(board[position]);
     }
+
+    public Game pristineMove(int position) {
+        mark(position);
+        return this;
+    }
 }
