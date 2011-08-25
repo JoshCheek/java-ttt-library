@@ -17,10 +17,10 @@ public class RatingTest extends junit.framework.TestCase {
         assertEquals(-1.0, Rating.rate_for("110222001", 1));
     }
 
-//    public void testItRatesAs1IfABoardIsAGuaranteedWin() {
-//        assertEquals(1.0, Rating.rate_for("110220000", 1));
-//    }
-//
+    public void testItRatesAs1IfABoardIsAGuaranteedWin() {
+        assertEquals(1.0, Rating.rate_for("110220000", 1));
+    }
+
 //    public void testItRatesAsNegative1IfABoardIsAGuaranteedLoss() {
 //        assertEquals(-1.0, Rating.rate_for("110220100", 1));
 //    }
