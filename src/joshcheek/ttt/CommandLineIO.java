@@ -20,15 +20,19 @@ public class CommandLineIO implements IO {
     }
 
     public void displayIntro() {
-        out("intro");
+        out("Welcome to Tic Tac Toe!");
     }
 
-    public void displayResults(Game game) {
-        out("results");
+    public void displayResults() {
+        displayBoard();
+        if(game.isTie())
+            out("Tie game!");
+        else
+            out("Player " + game.winner() + " won the game!");
     }
 
     public void displayOutro() {
-        out("outro");
+        out("Play again soon!");
     }
 
     public char promptPlayerType(int turnNumber) {
@@ -40,7 +44,7 @@ public class CommandLineIO implements IO {
         System.out.println(msg);
     }
 
-    public void displayBoard(Game game) {
+    public void displayBoard() {
         out("   |   |   ");
         out(" " + markerFor(1) + " | " + markerFor(2) + " | " + markerFor(3) + " ");
         out("   |   |   ");
@@ -56,7 +60,11 @@ public class CommandLineIO implements IO {
     }
 
     public int getMove() {
-        out("Where would you like to move? " + game.availableMoves());
+        String moveOptions = "(";
+        for(int move : game.availableMoves())
+            moveOptions += " " + move;
+        moveOptions += " )";
+        out("Where would you like to move? " + moveOptions);
         return Integer.parseInt(input.nextLine());
     }
 

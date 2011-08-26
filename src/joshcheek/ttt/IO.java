@@ -10,9 +10,9 @@ package joshcheek.ttt;
 public interface IO {
     public void setGame(Game game);
     public void displayIntro();
-    public void displayResults(Game game);
+    public void displayResults();
     public void displayOutro();
     public char promptPlayerType(int turnNumber);
-    public void displayBoard(Game game);
+    public void displayBoard();
     public int  getMove();
 }

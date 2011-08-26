@@ -34,7 +34,7 @@ public class CommandLineInterfase implements Interfase {
 
     private void takeTurns() {
         while(!game.isOver()) {
-            io.displayBoard(game);
+            io.displayBoard();
             currentPlayer().takeTurn();
         }
     }
@@ -49,7 +49,7 @@ public class CommandLineInterfase implements Interfase {
         io.displayIntro();
         setPlayers();
         takeTurns();
-        io.displayResults(game);
+        io.displayResults();
         io.displayOutro();
     }
 
