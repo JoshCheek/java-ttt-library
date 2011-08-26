@@ -129,4 +129,8 @@ public class Game {
         newGame.mark(position);
         return newGame;
     }
+
+    public int playerAt(int position) {
+        return numForPlayer(board[position-1]);
+    }
 }

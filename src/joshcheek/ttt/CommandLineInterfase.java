@@ -1,6 +1,5 @@
 package joshcheek.ttt;
 
-import java.io.IOError;
 import java.util.Scanner;
 
 /**
@@ -19,6 +18,7 @@ public class CommandLineInterfase implements Interfase {
 
     public CommandLineInterfase(Game game) {
         this.game = game;
+        io = new IO();
     }
 
     public void setPlayers() {
@@ -34,7 +34,10 @@ public class CommandLineInterfase implements Interfase {
     }
 
     private void takeTurns() {
-        currentPlayer().takeTurn();
+        while(!game.isOver()) {
+            io.displayBoard(game);
+            currentPlayer().takeTurn();
+        }
     }
 
     public Player currentPlayer() {
@@ -53,7 +56,7 @@ public class CommandLineInterfase implements Interfase {
 
     private class IO {
 
-        private Scanner input;
+        private Scanner input = new Scanner(System.in);
 
         public void displayIntro() {
             out("intro");
@@ -67,17 +70,33 @@ public class CommandLineInterfase implements Interfase {
             out("outro");
         }
 
-        public class IO() {
-            input = new Scanner(System.in);
-        }
-
         public char promptPlayerType(int turnNumber) {
             out("Do you want player " + turnNumber + " to be played by a human or computer? (h/c): ");
-            input.nextLine().charAt(0);
+            return input.nextLine().charAt(0);
         }
 
         private void out(String msg) {
             System.out.println(msg);
+        }
+
+        public void displayBoard(Game game) {
+            out("   |   |   ");
+            out(" " + markerFor(1) + " | " + markerFor(2) + " | " + markerFor(3) + " ");
+            out("   |   |   ");
+            out("---|---|---");
+            out("   |   |   ");
+            out(" " + markerFor(4) + " | " + markerFor(5) + " | " + markerFor(6) + " ");
+            out("   |   |   ");
+            out("---|---|---");
+            out("   |   |   ");
+            out(" " + markerFor(7) + " | " + markerFor(8) + " | " + markerFor(9) + " ");
+            out("   |   |   ");
+            out("");
+        }
+
+        private String markerFor(int position) {
+            if(game.playerAt(position) == -1) return " ";
+            return Integer.toString(game.playerAt(position));
         }
     }
 }
