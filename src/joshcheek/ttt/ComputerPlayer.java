@@ -19,13 +19,17 @@ public class ComputerPlayer {
     }
 
     public int bestMove() {
-        if(game.board().equals("000000000"))
-            return 1;
+        if(isFirstMoveInGame()) return 1;
+        if(hasNecessaryMove())  return necessaryMove();
+        return highestRatedMove();
+    }
+
+    private int highestRatedMove() {
         int bestMove=0;
-        double bestRating=0;
+        double bestRating=-2;
         for(int move: game.availableMoves()) {
             Game newGame  = game.pristineMove(move);
-            double rating = Rating.rate_for(newGame.board(), game.turn());
+            double rating = Rating.rate_for(newGame.board(), playerNumber());
             if(rating > bestRating) {
                 bestMove = move;
                 bestRating = rating;
@@ -34,8 +38,21 @@ public class ComputerPlayer {
         return bestMove;
     }
 
-//
-//    private int playerNumber() {
-//        return 0;  //To change body of created methods use File | Settings | File Templates.
-//    }
+    private int playerNumber() {
+        return game.turn();
+    }
+
+    private boolean hasNecessaryMove() {
+        return necessaryMove() != -1;
+    }
+
+    private int necessaryMove() {
+        return -1;  //To change body of created methods use File | Settings | File Templates.
+    }
+
+    private boolean isFirstMoveInGame() {
+        return game.board().equals("000000000");
+    }
+
+
 }

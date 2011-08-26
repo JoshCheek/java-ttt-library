@@ -66,15 +66,17 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
     }
 
 
+//    public void testItBlocksOpponentsWinOnLhs() {
+//        assertCorrectMove("120100000", 2, new String[]{"120100200"});
+//    }
 //
-//        context "Computer blocks opponent's win" do
-//          moves_for [
-//            ['120100000', 2, ['120100200']              , 'blocks lhs'                                ],
-//            ['122110000', 2, ['122110200', '122110002'] , "blocks either of opponent's possible wins" ],
-//            ['211200000', 1, ['211200100']              , 'blocks when first player'                  ],
-//          ]
-//        end
+//    public void testItBlocksEitherOfOpponentsPossibleWins() {
+//	    assertCorrectMove("122110000", 2, new String[]{"122110200", "122110002"});
+//    }
 //
+//    public void testItBlocksOpponentsWinWhenFirstPlayer() {
+//	    assertCorrectMove("211200000", 1, new String[]{"211200100"});
+//    }
 
     public void testItFindsBestMovesForLikelyGameStates_makesBest1stMove() {
         assertCorrectMove("000000000", 1, new String[]{"100000000", "001000000", "000000100", "000000001"});
