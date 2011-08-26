@@ -33,13 +33,20 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
         assertTrue(inAry);
     }
 
+    private void assertInArray(int[] ints, int target) {
+        boolean inAry = false;
+        for(int crnt : ints) if(crnt == target) inAry = true;
+        assertTrue(inAry);
+    }
+
     public void testItAlwaysTakesAWinWhenItCanWinAcrossTop() {
         assertCorrectMove("110200200", 1, new String[]{"111200200"});
     }
-
-//    public void testItAlwaysTakesAWinWhenItCan can_win_across_bottom_and_opponent_can_win_across_top() {
+//
+//    public void testItAlwaysTakesAWinWhenItCanWinAcrossBottomAndOpponentCanWinAcrossTop() {
 //        assertCorrectMove("220000110", 1, new String[]{"220000111"});
 //    }
+
 //
 //    public void testItAlwaysTakesAWinWhenItCan can_win_vertically_on_RHS_opponent_can_win_too() {
 //        assertCorrectMove("201201000", 1, new String[]{"201201001"});
@@ -109,13 +116,13 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
 //          ]
 //        end
 //
-//        describe '#best_move' do
-//          it 'powers the #take_turn method by finding the best move' do
-//            game = Game.new '000000000'
-//            computer = ComputerPlayer.new game
-//            [1, 3, 7, 9].should include computer.best_move
-//          end
-//        end
+
+    public void testBestMovePowersTheTakeTurnMethodByFindingTheBestMove() {
+        Game game = new Game("000000000");
+        ComputerPlayer computer = new ComputerPlayer(game);
+        assertInArray(new int[]{1, 3, 7, 9}, computer.bestMove());
+    }
+
 //
 //        describe '#moves_by_rating' do
 //          let(:game)     { Game.new '121122000' }

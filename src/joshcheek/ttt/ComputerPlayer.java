@@ -16,5 +16,20 @@ public class ComputerPlayer {
 
     public void takeTurn() {
         game.mark(3);
+//        game.mark(bestMove());
     }
+
+    public int bestMove() {
+//        int bestMove=0;
+//        double bestRating=0;
+//        for(int move: game.availableMoves()) {
+//            Game newGame  = game.pristineMove(move);
+//            double rating = Rating.rate_for(game.board(), playerNumber());
+//        }
+        return 1;
+    }
+//
+//    private int playerNumber() {
+//        return 0;  //To change body of created methods use File | Settings | File Templates.
+//    }
 }
