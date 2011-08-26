@@ -20,14 +20,21 @@ public class ComputerPlayer {
     }
 
     public int bestMove() {
-//        int bestMove=0;
-//        double bestRating=0;
-//        for(int move: game.availableMoves()) {
-//            Game newGame  = game.pristineMove(move);
-//            double rating = Rating.rate_for(game.board(), playerNumber());
-//        }
-        return 1;
+        if(game.board().equals("000000000"))
+            return 1;
+        int bestMove=0;
+        double bestRating=0;
+        for(int move: game.availableMoves()) {
+            Game newGame  = game.pristineMove(move);
+            double rating = Rating.rate_for(newGame.board(), game.turn());
+            if(rating > bestRating) {
+                bestMove = move;
+                bestRating = rating;
+            }
+        }
+        return bestMove;
     }
+
 //
 //    private int playerNumber() {
 //        return 0;  //To change body of created methods use File | Settings | File Templates.

@@ -117,10 +117,16 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
 //        end
 //
 
-    public void testBestMovePowersTheTakeTurnMethodByFindingTheBestMove() {
+    public void testBestMoveMakesTheBestMoveOnFirstBoard() {
         Game game = new Game("000000000");
         ComputerPlayer computer = new ComputerPlayer(game);
         assertInArray(new int[]{1, 3, 7, 9}, computer.bestMove());
+    }
+
+    public void testBestMovePowersTheTakeTurnMethodByFindingTheBestMove() {
+        Game game = new Game("100000000");
+        ComputerPlayer computer = new ComputerPlayer(game);
+        assertEquals(5, computer.bestMove());
     }
 
 //
