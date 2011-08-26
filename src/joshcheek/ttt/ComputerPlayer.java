@@ -15,8 +15,7 @@ public class ComputerPlayer {
     }
 
     public void takeTurn() {
-        game.mark(3);
-//        game.mark(bestMove());
+        game.mark(bestMove());
     }
 
     public int bestMove() {

@@ -25,6 +25,13 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
         assertInArray(validMoves, game.board());
     }
 
+    private void assertCorrectMove(String initial, int player) {
+        Game game = new Game(initial);
+        ComputerPlayer computer = new ComputerPlayer(game);
+        computer.takeTurn();
+        assertEquals(1.0, Rating.rate_for(game.board(), player));
+    }
+
     private void assertInArray(String[] strings, String target) {
         boolean inAry = false;
         for(String string : strings)
@@ -39,34 +46,33 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
         assertTrue(inAry);
     }
 
-    public void testItAlwaysTakesAWinWhenItCanWinAcrossTop() {
+    public void testItMovesToAWinningStateWhenItCanWinAcrossTop() {
         assertCorrectMove("110200200", 1, new String[]{"111200200"});
     }
-//
-//    public void testItAlwaysTakesAWinWhenItCanWinAcrossBottomAndOpponentCanWinAcrossTop() {
-//        assertCorrectMove("220000110", 1, new String[]{"220000111"});
-//    }
 
-//
-//    public void testItAlwaysTakesAWinWhenItCan can_win_vertically_on_RHS_opponent_can_win_too() {
-//        assertCorrectMove("201201000", 1, new String[]{"201201001"});
-//    }
-//
-//    public void testItAlwaysTakesAWinWhenItCan can_win_vertically_on_RHS_opponent_can_win_too() {
-//        assertCorrectMove("120120000", 1, new String[]{"120120100"});
-//    }
-//
-//    public void testItAlwaysTakesAWinWhenItCan can_win_diagonally() {
-//        assertCorrectMove("102210000", 1, new String[]{"102210001"});
-//    }
-//
-//    public void testItAlwaysTakesAWinWhenItCan can_win_in_two_positions() {
-//        assertCorrectMove("120112020", 1, new String[]{"120112120", "120112021"});
-//    }
-//
-//    public void testItAlwaysTakesAWinWhenItCan 2nd_player_and_1st_can_also_win() {
-//        assertCorrectMove("120021001", 2, new String[]{"120021021"});
-//    }
+    public void testItMovesToAWinningStateWhenItCanWinAcrossBottomAndOpponentCanWinAcrossTop() {
+        assertCorrectMove("220000110", 1);
+    }
+
+    public void testItMovesToAWinningStateWhenItCanWinVerticallyOnRhsOpponentCanWinToo() {
+        assertCorrectMove("201201000", 1);
+    }
+
+    public void testItMovesToAWinningStateWhenItCanWinVerticallyOnLhsOpponentCanWinToo() {
+        assertCorrectMove("120120000", 1);
+    }
+
+    public void testItAlwaysTakesAWinWhenItCanWinDiagonally() {
+        assertCorrectMove("102210000", 1);
+    }
+
+    public void testMovesToAWinningStateWhenItCanWinInTwoPositions() {
+        assertCorrectMove("120112020", 1);
+    }
+
+    public void testItMovesToAWinningStateWhenItCan2ndPlayerAnd1stCanAlsoWin() {
+        assertCorrectMove("120021001", 2);
+    }
 
 
 //          def self.move_for(configuration, player, possible_boards, description)
