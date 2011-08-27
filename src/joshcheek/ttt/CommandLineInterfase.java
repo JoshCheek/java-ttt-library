@@ -9,15 +9,14 @@ package joshcheek.ttt;
  */
 public class CommandLineInterfase implements Interfase {
 
-    private Game game;
-    private Player player1;
-    private Player player2;
-    private IO     io;
+    private Game              game;
+    private Player            player1;
+    private Player            player2;
+    private CommandLineInput  input  = new CommandLineInput();
+    private CommandLineOutput output = new CommandLineOutput();
 
     public CommandLineInterfase(Game game) {
         this.game = game;
-        io = new CommandLineIO();
-        io.setGame(game);
     }
 
     public void setPlayers() {
@@ -26,15 +25,15 @@ public class CommandLineInterfase implements Interfase {
     }
 
     private Player setPlayer(int turnNumber) {
-        if(io.promptPlayerType(turnNumber) == 'h')
-            return new HumanPlayer(game, io);
+        if(input.promptPlayerType(turnNumber) == 'h')
+            return new HumanPlayer(game, input);
         else
             return new ComputerPlayer(game);
     }
 
     private void takeTurns() {
         while(!game.isOver()) {
-            io.displayBoard();
+            output.displayBoard(game.board());
             currentPlayer().takeTurn();
         }
     }
@@ -46,11 +45,11 @@ public class CommandLineInterfase implements Interfase {
     }
 
     public void playGame() {
-        io.displayIntro();
+        output.displayIntro();
         setPlayers();
         takeTurns();
-        io.displayResults();
-        io.displayOutro();
+        output.displayResults(game.winner(), game.board());
+        output.displayOutro();
     }
 
 }

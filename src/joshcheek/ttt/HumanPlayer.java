@@ -9,16 +9,16 @@ package joshcheek.ttt;
  */
 public class HumanPlayer implements Player {
 
-    private Game game;
-    private IO   io;
+    private Game                game;
+    private CommandLineInput    input;
 
-    public HumanPlayer(Game game, IO io) {
-        this.game = game;
-        this.io   = io;
+    public HumanPlayer(Game game, CommandLineInput input) {
+        this.game   = game;
+        this.input  = input;
     }
 
     public void takeTurn() {
-        game.mark(io.getMove());
+        game.mark(input.getMove(game.availableMoves()));
     }
 
 }
