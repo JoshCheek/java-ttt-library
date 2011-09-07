@@ -1,4 +1,6 @@
-package joshcheek.ttt;
+package com.joshcheek.ttt.library;
+
+import com.joshcheek.ttt.library.Game;
 
 import static org.junit.Assert.assertArrayEquals;
 

@@ -1,14 +1,12 @@
-package joshcheek.ttt;
+package com.joshcheek.ttt.library;
 
 /**
  * Created by IntelliJ IDEA.
  * User: joshuajcheek
  * Date: 8/26/11
- * Time: 4:59 AM
+ * Time: 5:12 AM
  * To change this template use File | Settings | File Templates.
  */
-public interface Interfase {
-
-    void playGame();
-
+public interface Player {
+    public void takeTurn();
 }

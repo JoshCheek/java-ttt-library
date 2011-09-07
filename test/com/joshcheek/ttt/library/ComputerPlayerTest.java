@@ -1,4 +1,6 @@
-package joshcheek.ttt;
+package com.joshcheek.ttt.library;
+
+import junit.framework.Assert;
 
 /**
  * Created by IntelliJ IDEA.
@@ -20,7 +22,7 @@ public class ComputerPlayerTest extends junit.framework.TestCase {
         Game game = new Game(initial);
         ComputerPlayer computer = new ComputerPlayer(game);
         computer.takeTurn();
-        assertEquals(1.0, Rating.rate_for(game.board(), player));
+        Assert.assertEquals(1.0, Rating.rate_for(game.board(), player));
     }
 
     private void assertInArray(String[] strings, String target) {

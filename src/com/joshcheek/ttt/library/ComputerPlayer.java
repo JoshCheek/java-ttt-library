@@ -1,4 +1,4 @@
-package joshcheek.ttt;
+package com.joshcheek.ttt.library;
 
 /**
  * Created by IntelliJ IDEA.
