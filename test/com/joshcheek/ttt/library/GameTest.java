@@ -1,7 +1,5 @@
 package com.joshcheek.ttt.library;
 
-import com.joshcheek.ttt.library.Game;
-
 import static org.junit.Assert.assertArrayEquals;
 
 /**
@@ -186,5 +184,18 @@ public class GameTest extends junit.framework.TestCase {
             Game marked  = initial.pristineMove(1);
             assertEquals("000000000", initial.board());
         }
+
+    public void testIsAvailable() {
+        Game game = new Game("010200100");
+        assertTrue(game.isAvailable(1));
+        assertFalse(game.isAvailable(2));
+        assertTrue(game.isAvailable(3));
+        assertFalse(game.isAvailable(4));
+        assertTrue(game.isAvailable(5));
+        assertTrue(game.isAvailable(6));
+        assertFalse(game.isAvailable(7));
+        assertTrue(game.isAvailable(8));
+        assertTrue(game.isAvailable(9));
+    }
 }
 

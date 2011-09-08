@@ -110,18 +110,18 @@ public class Game {
 
     private void copyAvailableMovesInto(int[] availableMoves) {
         for(int read=0, write=0; read<9; ++read)
-            if(isAvailable(read))
+            if(isAvailable(read+1))
                 availableMoves[write++]=read+1;
     }
 
     public int numPositionsAvailable() {
         int size=0;
-        for(int read=0; read<9; ++read) if(isAvailable(read)) ++size;
+        for(int read=0; read<9; ++read) if(isAvailable(read+1)) ++size;
         return size;
     }
 
-    private boolean isAvailable(int position) {
-        return !isPlayer(board[position]);
+    public boolean isAvailable(int position) {
+        return !isPlayer(board[position-1]);
     }
 
     public Game pristineMove(int position) {
