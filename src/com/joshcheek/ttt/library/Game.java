@@ -104,23 +104,28 @@ public class Game {
         if(isOver())
             return new int[0];
         int availableMoves[] = new int[numPositionsAvailable()];
-        copyAvailableMovesInto(availableMoves);
+        copyEmptyMovesInto(availableMoves);
         return availableMoves;
     }
 
-    private void copyAvailableMovesInto(int[] availableMoves) {
+    private void copyEmptyMovesInto(int[] availableMoves) {
         for(int read=0, write=0; read<9; ++read)
-            if(isAvailable(read+1))
+            if(isEmpty(read))
                 availableMoves[write++]=read+1;
     }
 
     public int numPositionsAvailable() {
         int size=0;
-        for(int read=0; read<9; ++read) if(isAvailable(read+1)) ++size;
+        for(int read=0; read<9; ++read) if(isEmpty(read)) ++size;
         return size;
     }
 
+    private boolean isEmpty(int position_from_zero) {
+        return !isPlayer(board[position_from_zero]);
+    }
+
     public boolean isAvailable(int position) {
+        if(availableMoves().length == 0) return false;
         return !isPlayer(board[position-1]);
     }
 

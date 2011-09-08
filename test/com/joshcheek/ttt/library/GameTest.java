@@ -197,5 +197,19 @@ public class GameTest extends junit.framework.TestCase {
         assertTrue(game.isAvailable(8));
         assertTrue(game.isAvailable(9));
     }
+
+    public void testIsAvailableReturnsFalseForEveryPositionWhenGameIsOver() {
+        assertNoMovesFor("111220000"); // player1 wins
+        assertNoMovesFor("112221210"); // player2 wins
+        assertNoMovesFor("112221121"); // tie game
+    }
+
+    private void assertNoMovesFor(String board) {
+        Game game = new Game(board);
+        assertArrayEquals(new int[0], game.availableMoves());
+        for(int position=1; position<=8; ++position)
+            assertFalse("" + position + " should not be available in " + game.board(),
+                    game.isAvailable(position));
+    }
 }
 
