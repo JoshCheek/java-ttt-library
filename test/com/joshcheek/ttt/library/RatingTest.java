@@ -1,7 +1,5 @@
 package com.joshcheek.ttt.library;
 
-import com.joshcheek.ttt.library.Rating;
-
 /**
  * Created by IntelliJ IDEA.
  * User: joshuajcheek
@@ -64,32 +62,6 @@ public class RatingTest extends junit.framework.TestCase {
         double rating2 = Rating.rate_for(board2, player2);
         double delta   = Math.abs(rating1 - rating2);
         assertTrue(delta < 0.0000001);
+        // equals with a delta
     }
-
-
-//  describe RATINGS do
-//    it "holds the calculated values of Rating so we don't need to calculate in real time" do
-//      %w[121020010 121020210 121000200 121100200 121100220].each do |board|
-//        RATINGS[board].should == { 1 => rate[board, 1], 2 => rate[board, 2] }
-//      end
-//    end
-//
-//
-//    describe "if for some reason it doesn't know the rating" do
-//      let(:board)         { '121001200' }
-//      let(:cached_value)  { RATINGS[board] }
-//      let(:empty_ratings) { r = RATINGS.dup; r.clear; r }
-//      it "will calculate the boards" do
-//        empty_ratings[board].should == cached_value
-//      end
-//      it 'will add the board to the RATINGS cache' do
-//        empty_ratings.size.should be 0
-//        empty_ratings[board]
-//        empty_ratings.size.should be 1
-//        empty_ratings[board]
-//        empty_ratings.size.should be 1
-//      end
-//    end
-//  end
-//end
 }
